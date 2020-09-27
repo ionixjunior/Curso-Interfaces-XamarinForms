@@ -1,6 +1,162 @@
 ## Capítulo 1: Controles primitivos
 O objetivo é fazer um overview sobre todos os controles primitivos existentes (label, button...).
 
+> #### Capítulo 1.1: Resumo do que será abordado
+
+> #### Capítulo 1.2: Label
+> - Introdução do Label
+> - Customização de cores
+> - Fonte
+> - Tamanho
+> - Truncamento
+> - Limite de linhas.
+
+> #### Capítulo 1.3: Image
+> - Introdução do Image
+> - Aspectos
+> - Tamanho
+
+> #### Capítulo 1.4: WebView
+> - Introdução do WebView
+> - Eventos
+
+> #### Capítulo 1.5: Button
+> - Introdução do Button
+> - Customização de cores
+> - Interações
+
+> #### Capítulo 1.6: ImageButton
+> - Complementa o contéudo do Button
+> - Utilização de imagens
+
+> #### Capítulo 1.7: Switch
+> - Introdução do Switch
+> - Customização de cores
+
+> #### Capítulo 1.8: Picker
+> - Introdução do Picker
+> - Customização de cores
+> - Fonte
+> - Seleção de valor
+
+> #### Capítulo 1.9: DatePicker
+> - Introdução do DatePicker
+> - Customização de cores
+> - Fonte
+> - Seleção de data
+
+> #### Capítulo 1.10: TimePicker
+> - Introdução do TimePicker
+> - Customização de cores
+> - Fonte
+> - Seleção de hora
+
+> #### Capítulo 1.11: Slider
+> - Introdução do Slider
+> - Customização de cores
+
+> #### Capítulo 1.12: Stepper
+> - Introdução do Stepper
+> - Exemplos de aplicação
+
+> #### Capítulo 1.13: RefreshView
+> - Introdução do RefreshView
+> - Exemplos de aplicação
+
+> #### Capítulo 1.14: SearchBar
+> - Introdução do SearchBar
+
+> #### Capítulo 1.15: SwipeView
+> - Introdução do SwipeView
+> - Inserção de itens
+
+> #### Capítulo 1.16: RadioButton
+> - Introdução do RadioButton
+
+> #### Capítulo 1.17: CheckBox
+> - Introdução do CheckBox
+
+> #### Capítulo 1.18: ActivityIndicator
+> - Introdução do ActivityIndicator
+> - Customizações de cores 
+
+> #### Capítulo 1.19: ProgressBar
+> - Introdução do ProgressBar
+> - Customizações de cores
+
+> #### Capítulo 1.20: Entry
+> - Introdução do Entry
+> - Digitando texto
+> - Placeholder
+> - Customização de cores
+> - Fonte
+> - Tipos de teclado
+> - Transformação de texto
+> - Limite de caracteres
+> - Espaço entre caracteres
+> - Senha
+> - Tecla de retorno do teclado
+> - Verificação ortográfica
+> - Predição
+> - Eventos
+
+> #### Capítulo 1.21: Editor
+> - Complementa o conteúdo do Entry abordando também o auto size
+
+> #### Capítulo 1.22: ListView
+> - Introdução do ListView
+> - DataTemplate
+> - Built-in cells
+> - Custom cells
+> - Tamanho das células
+> - Agrupamento
+> - Cabeçalho
+> - Rodapé
+> - Context Actions
+> - Pull to refresh
+> - Performance
+> - Seleção
+
+> #### Capítulo 1.23: CollectionView
+> - Introdução do CollectionView
+> - Layout
+> - DataTemplate
+> - Orientação
+> - Agrupamento
+> - Cabeçalho
+> - Rodapé
+> - Performance
+> - Seleção
+
+> #### Capítulo 1.24: TableView
+> - Introdução do TableView
+> - Tipos de apresentação
+> - Customziações
+
+> #### Capítulo 1.25: CarouselView
+> - Conteúdo similar ao ListView e CollectionView, porém, mostrando as diferenças que o CarouselView tem
+
+> #### Capítulo 1.26: IndicatorView
+> - Utilização do IndicatorView com CarouselView
+
+> #### Capítulo 1.27: BoxView
+> - Introdução do BoxView
+> - Customização de cor
+> - Borda
+> - Tamanho
+
+> #### Capítulo 1.28: Shapes
+> - Introdução do Shapes
+> - Line
+> - Rectangle
+> - Ellipse
+> - Path
+> - Polygon
+> - Polyline
+
+> #### Capítulo 1.29: Propriedades em comum dos controles primitivos
+> - Apresentar as propriedades em comum que muitos controles possuem - Translation, Scale, Rotate..
+
 ## Capítulo 2: Controles de layout
 O objetivo é fazer um overview sobre todos os controles de layout existentes (stacklayout, flexlayout...)
 
