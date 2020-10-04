@@ -133,4 +133,8 @@
       <Name>Exemplos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banana.png" />
+    <BundleResource Include="Resources\monkey.jpg" />
+  </ItemGroup>
 </Project>
