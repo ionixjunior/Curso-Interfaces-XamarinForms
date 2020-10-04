@@ -5,6 +5,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Label">
     <ContentPage.Content>
-        <Label />
+        <Label
+            BackgroundColor="Orange"
+            CharacterSpacing="10"
+            FontAttributes="Italic"
+            FontSize="Title"
+            HorizontalTextAlignment="Center"
+            LineBreakMode="WordWrap"
+            MaxLines="2"
+            Text="Olá, aqui está meu primeiro texto!"
+            TextColor="#0000ff"
+            TextDecorations="Underline"
+            TextTransform="Uppercase"
+            VerticalTextAlignment="Center" />
     </ContentPage.Content>
 </ContentPage>
