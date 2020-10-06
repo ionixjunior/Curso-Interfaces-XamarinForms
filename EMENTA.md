@@ -11,27 +11,72 @@ O objetivo é fazer um overview sobre todos os controles primitivos existentes (
 > - Truncamento
 > - Limite de linhas.
 
+##### Roteiro da intro
+Textos são utilizados em todos os aplicativos. Precisamos de textos para exibir nomes de menus, para mostrar uma mensagem que aparece na tela e também para mostrar o título de uma tela. E como a gente faz isso com Xamarin.Forms? A gente tem um controle chamado LABEL e é com ele que a gente pode representar textos no app. Nesse vídeo você vai ver como usar o Label, customizar cor da fonte, o alinhamento, enfim, o que é relacionado a esse controle. Blz? Bora lá então!
+
+##### Roteiro da demo
+Para representar um texto na tela, usamos o controle LABEL. E para inserir esse texto usamos a propriedade TEXT. Então, inserimos o texto desejado e fechamos a tag do controle. Ao salvar, o texto já aparecerá nos devices. 
+
+Para alterar a cor do texto que inserimos, usamos a propriedade TEXT COLOR. Essa propriedade espera uma cor do framework, que pode ser informada usando as cores nomeadas.. ou então definida através de um valor hexadecimal.
+
+Para alterar a cor de fundo do texto, usamos a propriedade BACKGROUND COLOR. Ela pode receber os mesmos tipos de valor que a propriedade TEXT COLOR. FALAR SOBRE O POSICIONAMENTO EM RELAÇÃO AO PAI; LAYOUT
+
+Para alterar o tamanho do texto, usamos a propriedade FONT SIZE, onde podemos definir o tamanho usando um valor absoluto ou usando o tamanho das fontes nomeadas pelo sistema. Usar os valores de fontes nomeadas é importante para a acessibilidade, pois eles respeitam as configurações de acessibilidade realizadas no device.
+
+Para alterar o tipo de fonte, usamos a propriedade FONT FAMILY, onde informamos as fontes que estão instaladas no SO. Podemos utilizar fontes customizadas, mas não vamos abordar isso agora.
+
+Existem alguns atributos que podemos customizar nas fontes, para isso, usamos a propriedade FONT ATTRIBUTES, onde podemos ajustá-la como BOLD ou ITALIC.
+
+Podemos também decorar um texto usando a propriedade TEXT DECORATION, onde podemos inserir um efeito de texto riscado.. ou sublinhado.
+
+Existe também algumas transformações que podemos fazer no texto, e fazemos isso através da propriedade TEXT TRANSFORM. Com ela, podemos alterar o texto para deixar todas as letras minúsculas… ou maiúsculas.
+
+Para ajustar o espaçamento entre caracteres, usamos a propriedade CHARACTER SPACING, onde informamos um valor absoluto.
+
+Em textos grandes, talvez seja necessário limitar a exibição dos caracteres. Para isso, usamos a propriedade LINE BREAK MODE. A configuração mais comum é TAIL TRUNCATION, onde o texto é truncado no final e é inserido 3 pontos no final do texto indicando que o mesmo não acabou. Mas o texto também pode ser truncado no começo com HEAD TRUNCATION, no centro com MIDDLE TRUNCATION, o truncamento pode ser ignorado com a propriedade NO WRAP.. ou o truncamento pode ser feito através de palavras com WORDWRAP. AQUI É IMPORTANTE REVISAR POIS WORDWRAP NÃO É TRUNCADO
+
+Podemos também configurar a quantidade de linhas que queremos exibir usando a propriedade MAX LINES. 
+
+O texto pode ser alinhado horizontalmente com a propriedade HORIZONTAL TEXT ALIGHMENT. Por padrão, ele é alinhado com o valor START, mas podemos configurar como END ou CENTER.
+
+Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGHMENT, que funciona da mesma forma que o alinhamento horizontal.
+
 > #### Capítulo 1.3: Image
 > - Introdução do Image
 > - Aspectos
 > - Tamanho
 
+##### Roteiro da intro
+Imagens também estão presentes na maioria dos aplicativos. Usamos elas para visualizar a foto de um post de uma rede social, a foto de um avatar ou até mesmo para mostrar um ícone na tela. Para usarmos imagens temos um controle chamado Image, e é sobre ele que vamos falar agora. Bora lá!
+
 > #### Capítulo 1.4: WebView
 > - Introdução do WebView
 > - Eventos
+
+##### Roteiro da intro
+As vezes é necessário carregar uma página da internet dentro do aplicativo, e pra isso a gente pode usar um controle chamado WebView. Com o WebView a gente consegue navegar para uma página e também avançar ou retroceder na navegação. Vamos conferir como usar o WebView. Bora lá!
 
 > #### Capítulo 1.5: Button
 > - Introdução do Button
 > - Customização de cores
 > - Interações
 
+##### Roteiro da intro
+A todo instante fazemos interações nas telas dos devices e geralmente é pra executar uma ação - baixar uma imagem ou salvar as informações de uma tela. Na maioria das vezes isso é feito através de um botão, e é sobre isso que vamos falar agora, um controle chamado Button. Bora lá!
+
 > #### Capítulo 1.6: ImageButton
 > - Complementa o contéudo do Button
 > - Utilização de imagens
 
+##### Roteiro da intro
+Botões também podem ter imagens e nesse vídeo veremos como funciona o controle ImageButton; uma derivação do controle Button. Bora lá!
+
 > #### Capítulo 1.7: Switch
 > - Introdução do Switch
 > - Customização de cores
+
+##### Roteiro da intro
+É comum existir nos apps telas para ativamos ou desativarmos alguma configuração, por exemplo: para fazer o uso de notificações push ou então habilitar a biometria para poder validar alguma ação no app. Para isso existe um controle chamado Switch e nós vamos descobrir como usar e customizar ele agora. Bora lá!
 
 > #### Capítulo 1.8: Picker
 > - Introdução do Picker
@@ -39,11 +84,17 @@ O objetivo é fazer um overview sobre todos os controles primitivos existentes (
 > - Fonte
 > - Seleção de valor
 
+##### Roteiro da intro
+É provável que você já preencheu uma tela de cadastro onde precisou informar o Estado onde você mora. Como os Estados são opções pré-definidos, você não digita eles, você, geralmente, os seleciona. A gente consegue fazer isso também em uma aplicação mobile e, no Xamarin.Forms, a utilizamos o controle Picker. Então, vamos ver como funciona o Picker, customização de cores, fonte, seleção de valor. Blz? Bora lá!
+
 > #### Capítulo 1.9: DatePicker
 > - Introdução do DatePicker
 > - Customização de cores
 > - Fonte
 > - Seleção de data
+
+##### Roteiro da intro
+As vezes precisamos informar uma data no aplicativo, seja para preencher um cadastro ou para fazer um filtro em uma tela. Para isso usamos o DatePicker, um controle com a mesma ideia do Picker mas para fazer seleção de uma data do calendário. Então, vamos ver como usar e customizar esse controle. Bora lá!
 
 > #### Capítulo 1.10: TimePicker
 > - Introdução do TimePicker
@@ -51,9 +102,15 @@ O objetivo é fazer um overview sobre todos os controles primitivos existentes (
 > - Fonte
 > - Seleção de hora
 
+##### Roteiro da intro
+Além de data, também podemos informar no aplicativo o valor de um horário, e a gente tem um controle específico para isso: o TimePicker, que é um controle bem parecido com o DatePicker. Vamos ver como funciona? Bora lá!
+
 > #### Capítulo 1.11: Slider
 > - Introdução do Slider
 > - Customização de cores
+
+##### Roteiro da intro
+Em determinados aplicativos precisamos realizar ajustes finos em algumas configurações, por exemplo: controlar o volume do áudio ou ajustar o brilho da tela. Pra isso existe o controle Slider, que como o próprio nome já diz, serve pra gente interagir com o controle deslizando o dedo na tela. Vamos conferir como fazer o uso desse controle. Bora lá!
 
 > #### Capítulo 1.12: Stepper
 > - Introdução do Stepper
