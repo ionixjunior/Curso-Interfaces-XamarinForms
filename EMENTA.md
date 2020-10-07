@@ -69,7 +69,7 @@ A todo instante fazemos interações nas telas dos devices e geralmente é pra e
 > - Utilização de imagens
 
 ##### Roteiro da intro
-Botões também podem ter imagens e nesse vídeo veremos como funciona o controle ImageButton; uma derivação do controle Button. Bora lá!
+As vezes queremos que imagens tenham a mesma ação de um botão e nesse vídeo veremos como funciona o controle ImageButton; uma derivação do controle Button. Bora lá!
 
 > #### Capítulo 1.7: Switch
 > - Introdução do Switch
