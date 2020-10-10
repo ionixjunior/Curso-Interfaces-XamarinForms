@@ -116,30 +116,54 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Introdução do Stepper
 > - Exemplos de aplicação
 
+##### Roteiro da intro
+É muito comum em aplicativos de e-commerce ou delivery termos a opção de acrescentar ou remover um item em uma unidade, comumente representado por dois botões alinhados lado a lado, a grande maioria com o símbolo de + e -. O XF possui esse controle pronto para uso, vamos ver como ele funciona na prática?
+
 > #### Capítulo 1.13: RefreshView
 > - Introdução do RefreshView
 > - Exemplos de aplicação
 
+##### Roteiro da intro
+Você já ouviu falar no termo _Pull to Refresh_? Se você utiliza aplicativos de rede social, com certeza já fez uso dessa funcionalidade. No Xamarin.Forms era oferecido suporte para este controle apenas no ListView, porém na versão 4.3 ele foi convertido em uma ContentView que pode ser usada em qualquer layout ou conjunto de views. Vamos ver como ele funciona?
+
 > #### Capítulo 1.14: SearchBar
 > - Introdução do SearchBar
+
+##### Roteiro da intro
+As plataformas nativas nos fornecem um controle de busca, muito utilizado quando você quer pesquisar ou filtrar por um item ou termos em específico. O XF possui uma abstração desse controle o que nos facilita muito na hora de implementar um controle desse tipo. Vamos ver como ele funciona?
 
 > #### Capítulo 1.15: SwipeView
 > - Introdução do SwipeView
 > - Inserção de itens
 
+##### Roteiro da intro
+Muito comumente, em aplicativos de e-mail, você possui ações quando vc desliza o dedo sob uma célula da esquerda pra direita e ou da direita para esquerda, normalmente aparece uma outra view, como se estivesse escondida atrás da célula. A partir da versão 4.4 do XF podemos fazer isso facilmente com o uso do SwipeView, ele ainda é um controle experimental, mas ficará estável na versão 5.0 do XF. Chega de conversa e vamos ver como utilizá-lo na prática.
+
 > #### Capítulo 1.16: RadioButton
 > - Introdução do RadioButton
 
+##### Roteiro da intro
+Em certos formulários com opções de múltipla escolha, você quer o que o usuário selecione apenas uma das opções disponíveis. Isso pode ser feito facilmente com o controle RadioButton. Neste vídeo você verá como usá-lo e também vamos dar uma nas novidas que virão na versão 5.0 do XF o _Templated RadioButtons_ e _RadioButtonGroups_. Vamos lá?
+
 > #### Capítulo 1.17: CheckBox
 > - Introdução do CheckBox
+
+##### Roteiro da intro
+O controle CheckBox é semelhante ao controle _RadioButton_, a diferença é que ele permite que vc selecione mais de uma opção, das opções disponíveis. Vamos ver como podemos usar esse controle?
 
 > #### Capítulo 1.18: ActivityIndicator
 > - Introdução do ActivityIndicator
 > - Customizações de cores 
 
+##### Roteiro da intro
+Sempre que precisamos fazer um longo processo, como uma chamada de API ou um longo processamento, é bom mostrar ao usuário alguma indicação visual de que o app não está "travado" e sim "pensando". Para isso usamos o ActivityIndicator. Vamos ver como ele funciona na prática?
+
 > #### Capítulo 1.19: ProgressBar
 > - Introdução do ProgressBar
 > - Customizações de cores
+
+##### Roteiro da intro
+O ProgressBar é um controle, que assim como o ActivityIndicator, serve para mostrar que o app está fazendo um trabalho de longa duração. A diferença é que o ProgressBar mostra, de forma gráfica, quanto falta para o processo ser concluído. Vamos ver esse controle na prática?
 
 > #### Capítulo 1.20: Entry
 > - Introdução do Entry
@@ -157,8 +181,14 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Predição
 > - Eventos
 
+##### Roteiro da intro
+O entry é um dos controles mais comuns entre aplicativos, ele serve como um campo de entrada de texto, pode ser texto comum ou senhas. O entry também é utilizado quando você precisa de textos curtos, para textos longos utilizamos o controle Editor, que veremos no próximo vídeo. Vamos ver o que podemos fazer com o entry?
+
 > #### Capítulo 1.21: Editor
 > - Complementa o conteúdo do Entry abordando também o auto size
+
+##### Roteiro da intro
+O Editor é um controle para entrada de texto, assim como o entry, porém ele é usado quando tem a intenção de permitir uma grande quantidade de textos, como por exemplo um aplicativo de mensagens. Vamos ver como usar esse controle?
 
 > #### Capítulo 1.22: ListView
 > - Introdução do ListView
@@ -174,6 +204,9 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Performance
 > - Seleção
 
+##### Roteiro da intro
+Um dos controle mais comuns que se tem para exibir coleções de forma customizada. Através desse controle podemos, basicamente, exibir qualquer tipo de coleção em qualquer tipo de layout, esses layouts são exibidos dentro de outro controle, chamado _Cell_, que significa célula em pt-BR, e essa _Cell_ é uma View que pode conter layouts complexos e/ou simples. Vamos dar uma olhada nesse controle?
+
 > #### Capítulo 1.23: CollectionView
 > - Introdução do CollectionView
 > - Layout
@@ -185,22 +218,37 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Performance
 > - Seleção
 
+##### Roteiro da intro
+O CollectionView é a nova forma de se exibir coleções, é um controle novo introduzido na versão 4.4 do XF. Ele veio para substituir o ListView, com muito mais recursos e funcionalidades. Além de melhorias na performances. Vamos dar uma olhada nele?
+
 > #### Capítulo 1.24: TableView
 > - Introdução do TableView
 > - Tipos de apresentação
 > - Customziações
 
+##### Roteiro da intro
+Imagine uma tela de configurações, onde vc tem o título da opção do lado esquerdo e o switch ou checkBox do lado direito. Imaginou? Então esse tipo de layout pode ser facilmente criado com o controle _TableView_. Assim como o controle ListView, este controle utiliza o conceito de células para definir cada item apresentado na tela. Bom chega de imaginar e vamos ver na prática como esse controle funciona.
+
 > #### Capítulo 1.25: CarouselView
 > - Conteúdo similar ao ListView e CollectionView, porém, mostrando as diferenças que o CarouselView tem
 
+##### Roteiro da intro
+O CarouselView é mais um controle para lidar com coleções, ele é bem similar ao CollectionView. A diferença deste controle está nos casos de uso e como ele exibe as informações. Ele apresenta seu conteúdo de forma horizontal ou vertical, sendo a forma horizontal a mais comum. A ideia principal dele é mostrar um item por vez ao usuário, dando um destaque maior a esse item. Vamos dar uma olhada no CarouselView?
+
 > #### Capítulo 1.26: IndicatorView
 > - Utilização do IndicatorView com CarouselView
+
+##### Roteiro da intro
+Este controle serve para, basicamente, mostrar ao usuário em qual item ele está de um número definido de itens. Um pouco confuso? Não se preocupe, deixe eu colocar de outra forma, pois provavelmente você já viu esse controle... Lembra do CarouselView? Aquele controle que você coloca uma coleção de itens e ele exibe esses itens na horizontal ou vertical? Então, o IndicatorView é muito utilizado com o CarouselView, normalmente logo abaixo, como bolinhas indicando quantos items a coleção tem e qual índice está sendo exibido para o usuário. O bacana é que o time da XF resolveu criar esse controle separadamente do CarouselView permitindo que você possa utilizá-lo em conjunto com outros controles e/ou layouts. Vamos ver como o IndicatorView funciona?
 
 > #### Capítulo 1.27: BoxView
 > - Introdução do BoxView
 > - Customização de cor
 > - Borda
 > - Tamanho
+
+##### Roteiro da intro
+O BoxView é um controle primitivo que te permite criar um rentangulo. Parece algo bem "banal" mas ele pode ser útil em diversos cenários, como por exemplo, se vc precisar de criar um separador entre dois controles, você pode utilizar o BoxView com um tamanho definido e cor transparente. Ou se você tem uma lista de itens e precisa colocar uma linha no fim, como separador, você pode utilizar o BoxView com a propridade _Height_ com valor 1. Chega de conversa e vamos esse controle na prática!
 
 > #### Capítulo 1.28: Shapes
 > - Introdução do Shapes
@@ -210,6 +258,9 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Path
 > - Polygon
 > - Polyline
+
+##### Roteiro da intro
+O controle de shapes é um dos mais recentes controles do XF, adicionado na versão 4.7. Ele permite criar formas geometricas, simples e complexas de uma maneira _cross-platform_ e através do xaml. Permite também renderizar desenhos em SVG, através de suas coordenadas. Se antes tinhamos apenas o SkiaSharp como solução, para esse tipo de trabalho, agora o Shapes vem se mostrando uma excelente alternativa, em alguns cenários. Vamos dar uma olhada neste controle?
 
 > #### Capítulo 1.29: Propriedades em comum dos controles primitivos
 > - Apresentar as propriedades em comum que muitos controles possuem - Translation, Scale, Rotate..
