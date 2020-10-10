@@ -163,7 +163,7 @@ Sempre que precisamos fazer um longo processo, como uma chamada de API ou um lon
 > - Customizações de cores
 
 ##### Roteiro da intro
-O ProgressBar é um controle, que assim como o ActivityIndicator, serve para mostrar que o app está fazendo um trabalho de longa duração. A diferença é que é o ProgressBar mostra, de forma gráfica, quanto falta para o processo ser concluído. Vamos ver esse controle na prática?
+O ProgressBar é um controle, que assim como o ActivityIndicator, serve para mostrar que o app está fazendo um trabalho de longa duração. A diferença é que o ProgressBar mostra, de forma gráfica, quanto falta para o processo ser concluído. Vamos ver esse controle na prática?
 
 > #### Capítulo 1.20: Entry
 > - Introdução do Entry
