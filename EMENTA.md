@@ -117,7 +117,7 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Exemplos de aplicação
 
 ##### Roteiro da intro
-É muito comum em aplicativos de e-commecer ou delivery termos a opção de acrescentar ou remover um item em uma unidade, comumente representado por dois botões alinhados lado a lado, a grande maioria com o símbolo de + e -. O XF possui esse controle pronto para uso, vamos ver como ele funciona na prática?
+É muito comum em aplicativos de e-commerce ou delivery termos a opção de acrescentar ou remover um item em uma unidade, comumente representado por dois botões alinhados lado a lado, a grande maioria com o símbolo de + e -. O XF possui esse controle pronto para uso, vamos ver como ele funciona na prática?
 
 > #### Capítulo 1.13: RefreshView
 > - Introdução do RefreshView
