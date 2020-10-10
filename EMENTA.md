@@ -143,7 +143,7 @@ Muito comumente, em aplicativos de e-mail, você possui ações quando vc desliz
 > - Introdução do RadioButton
 
 ##### Roteiro da intro
-Em certos formulários com opções de multipla escolha, você quer o que o usuário selecione apenas uma das opções disponíveis. Isso pode ser feito facilmente com o controle RadioButton. Neste vídeo você verá como usá-lo e também vamos dar uma nas novidas que virão na versão 5.0 do XF o _Templated RadioButtons_ e _RadioButtonGroups_. Vamos lá?
+Em certos formulários com opções de múltipla escolha, você quer o que o usuário selecione apenas uma das opções disponíveis. Isso pode ser feito facilmente com o controle RadioButton. Neste vídeo você verá como usá-lo e também vamos dar uma nas novidas que virão na versão 5.0 do XF o _Templated RadioButtons_ e _RadioButtonGroups_. Vamos lá?
 
 > #### Capítulo 1.17: CheckBox
 > - Introdução do CheckBox
