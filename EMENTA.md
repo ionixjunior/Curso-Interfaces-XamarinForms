@@ -239,7 +239,7 @@ O CarouselView é mais um controle para lidar com coleções, ele é bem similar
 > - Utilização do IndicatorView com CarouselView
 
 ##### Roteiro da intro
-Este controle serve para, basicamente, mostrar ao usuário em qual item ele está de um número definido de itens. Um pouco confuso? Não se preocupe, deixe eu colocar de outra forma, pois provavelmente você já viu esse controle... Lembra do CarouselView? Aquele controle que você coloca uma coleção de itens e ele exebe esses itens na horizontal? Então, o IndicatorView é muito utilizado com o CarouselView, normalmente logo abaixo, como bolinhas indicando quantos items a coleção tem e qual índice está sendo exibido para o usuário. O bacana é que o time da XF resolveu criar esse controle separadamente do CarouselView permitindo que você possa utilizá-lo em conjunto com outros controles e/ou layouts. Vamos ver como o IndicatorView funciona?
+Este controle serve para, basicamente, mostrar ao usuário em qual item ele está de um número definido de itens. Um pouco confuso? Não se preocupe, deixe eu colocar de outra forma, pois provavelmente você já viu esse controle... Lembra do CarouselView? Aquele controle que você coloca uma coleção de itens e ele exibe esses itens na horizontal ou vertical? Então, o IndicatorView é muito utilizado com o CarouselView, normalmente logo abaixo, como bolinhas indicando quantos items a coleção tem e qual índice está sendo exibido para o usuário. O bacana é que o time da XF resolveu criar esse controle separadamente do CarouselView permitindo que você possa utilizá-lo em conjunto com outros controles e/ou layouts. Vamos ver como o IndicatorView funciona?
 
 > #### Capítulo 1.27: BoxView
 > - Introdução do BoxView
