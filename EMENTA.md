@@ -124,7 +124,7 @@ Em determinados aplicativos precisamos realizar ajustes finos em algumas configu
 > - Exemplos de aplicação
 
 ##### Roteiro da intro
-Você já ouviu falar no termo _Pull to Refresh_? Se você utiliza aplicativos de rede social, com certeza já fez uso dessa funcionalidade. No Xamarin.Forms era oferecido suporte para este controle apenas no ListView, porém na versão 4.3 ele foi convertido em uma ContentView que pode ser usada em qualquer layout ou conjuto de views. Vamos ver como ele funciona?
+Você já ouviu falar no termo _Pull to Refresh_? Se você utiliza aplicativos de rede social, com certeza já fez uso dessa funcionalidade. No Xamarin.Forms era oferecido suporte para este controle apenas no ListView, porém na versão 4.3 ele foi convertido em uma ContentView que pode ser usada em qualquer layout ou conjunto de views. Vamos ver como ele funciona?
 
 > #### Capítulo 1.14: SearchBar
 > - Introdução do SearchBar
