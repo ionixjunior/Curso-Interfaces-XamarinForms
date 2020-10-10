@@ -205,7 +205,7 @@ O Editor é um controle para entrada de texto, assim como o entry, porém ele é
 > - Seleção
 
 ##### Roteiro da intro
-Um dos controle mais comuns que se tem para exibir uma coleções de forma customizada. Através desse controle podemos, basicamente, exibir qualquer tipo de coleção em qualquer tipo de layout, esses layouts são exibidos dentro de outro controle, chamado _Cell_, que significa célula em pt-BR, e essa _Cell_ é uma View que pode conter layouts complexos e/ou simples. Vamos dar uma olhada nesse controle?
+Um dos controle mais comuns que se tem para exibir coleções de forma customizada. Através desse controle podemos, basicamente, exibir qualquer tipo de coleção em qualquer tipo de layout, esses layouts são exibidos dentro de outro controle, chamado _Cell_, que significa célula em pt-BR, e essa _Cell_ é uma View que pode conter layouts complexos e/ou simples. Vamos dar uma olhada nesse controle?
 
 > #### Capítulo 1.23: CollectionView
 > - Introdução do CollectionView
@@ -233,7 +233,7 @@ Imagine uma tela de configurações, onde vc tem o título da opção do lado es
 > - Conteúdo similar ao ListView e CollectionView, porém, mostrando as diferenças que o CarouselView tem
 
 ##### Roteiro da intro
-O CarouselView é mais um controle para lidar com coleções, ele é bem similar ao CollectionView. A diferença deste controle está nos casos de uso e como ele exibe as informações. Ele apresenta seu conteúdo de forma horizontal, isso mesmo é como se você pegasse o colectionView e deitasse ele e possui uma quantidade menor de elementos para exibir. Vamos dar uma olhada no CollectionView?
+O CarouselView é mais um controle para lidar com coleções, ele é bem similar ao CollectionView. A diferença deste controle está nos casos de uso e como ele exibe as informações. Ele apresenta seu conteúdo de forma horizontal ou vertical, sendo a forma horizontal a mais comum. A ideia principal dele é mostrar um item por vez ao usuário, dando um destaque maior a esse item. Vamos dar uma olhada no CarouselView?
 
 > #### Capítulo 1.26: IndicatorView
 > - Utilização do IndicatorView com CarouselView
