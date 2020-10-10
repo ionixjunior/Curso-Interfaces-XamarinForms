@@ -41,6 +41,9 @@ O texto pode ser alinhado horizontalmente com a propriedade HORIZONTAL TEXT ALIG
 
 Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGHMENT, que funciona da mesma forma que o alinhamento horizontal.
 
+##### Roteiro da finalização
+Agora que você já sabe trabalhar com o LABEL, vamos ver como é trabalhar com os demais controles. Te vejo no próximo vídeo!
+
 > #### Capítulo 1.3: Image
 > - Introdução do Image
 > - Aspectos
@@ -49,12 +52,42 @@ Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT AL
 ##### Roteiro da intro
 Imagens também estão presentes na maioria dos aplicativos. Usamos elas para visualizar a foto de um post de uma rede social, a foto de um avatar ou até mesmo para mostrar um ícone na tela. Para usarmos imagens temos um controle chamado Image, e é sobre ele que vamos falar agora. Bora lá!
 
+##### Roteiro da demo
+Para mostrar uma imagem na tela, usamos o controle IMAGE seguido do atributo SOURCE, onde especificamos a imagem que queremos utilizar. Essa imagem pode ser representada através de um link ou a partir do nome de uma imagem que estão nos projetos das plataformas, que no nosso caso, são Android e iOS.
+
+A imagem também possui uma propriedade de cor de fundo, e podemos customizá-la alterando o BACKGROUND COLOR, onde informamos a cor desejada. 
+
+Para alterar o aspecto da imagem usamos a propriedade ASPECT, e podemos fazer a imagem preencher todo o espaço que o controle ocupa usando o valor FILL, mas a imagem ficará distorcida por conta do tamanho da tela do device ser diferente do tamanho da imagem. Para essa distorção não acontecer, usamos o valor ASPECT FILL, que faz preencher a imagem em todo o espaço disponível e corta os cantos que excedem as extremidades da tela. A configuração padrão é ASPECT FIT, que faz exibir a imagem inteira na tela e sem distroções. 
+
+A imagem pode ter seu layout ajustado na horizontal com a propriedade HORIZONTAL OPTIONS. Existem diversas opções de alinhamento, como START, CENTER, END e FILL. Talvez você não veja a diferença entre elas pois a largura dessa imagem é maior do que o tamanho da tela. Eu vou colocar o dispositivo em modo paisagem para visualizarmos essas diferenças. START. CENTER. END. E FILL, que é a opção padrão. Para todas essas opções, também existe a possibilidade de expansão, mas abordaremos elas somente quando falarmos sobre layout.
+
+Agora vamos voltar o dispositivo para a orientação em modo retrato para falar sobre a propriedade VERTICAL OPTIONS, que possui as mesmas características da propriedade abordada anteriormente, só que para alinhamento vertical.
+
+Podemos especificar um tamanho para a imagem, basta declarar os atributos WIDTH REQUEST e HEIGHT REQUEST para atribuir os valores de largura e altura, respectivamente. Esses valores parecem que não fizeram efeito. Na verdade, eles trabalham em conjunto com as opções de layout definidas acima. Como configuramos o layout para preencher a tela, que é a opção FILL, a largura e altura definidas aqui são descartadas. Então, vou definir o valor CENTER nos layouts para que a imagem não seja renderizada seguindo todo o tamanho do controle e sim dos valores que definimos. Após essa mudança, podemos realizar as alterações de largura e altura. 
+
+O controle também é capaz de carregar gifs, basta referenciarmos o arquivo na propriedade SOURCE, seja por uma URL ou local. Por padrão, o gif não será executado, então, utilizamos a propriedade IS ANIMATION PLAYING para ativar esse recurso.
+
+##### Roteiro da finalização
+E aí, o que você achou do vídeo? Conta aí pra gente! Deixa o seu comentário e não esquece de dar o like. Valeu, até o próximo vídeo!
+
 > #### Capítulo 1.4: WebView
 > - Introdução do WebView
 > - Eventos
 
 ##### Roteiro da intro
 As vezes é necessário carregar uma página da internet dentro do aplicativo, e pra isso a gente pode usar um controle chamado WebView. Com o WebView a gente consegue navegar para uma página e também avançar ou retroceder na navegação. Vamos conferir como usar o WebView. Bora lá!
+
+##### Roteiro da demo
+Para exibirmos uma página HTML dentro do aplicativo, basta usar o controle WEBVIEW e adicionar um link no atributo SOURCE. Neste exemplo estou usando um link da internet, mas também podemos utilizar uma página HTML que esteja dentro do aplicativo nas pastas dos resources.
+
+O WebView possui alguns eventos para capturarmos quais são as páginas que foram navegadas ou que desejamos navegar. Estes eventos são chamados de NAVIGATED E NAVIGATING, respectivamente. Para utilizá-los, basta assinar no controle o evento NAVIGATED. O autocomplete irá sugerir a criação de um método no code behind da tela que será invocado pelo evento do WebView. Ao criarmos, podemos verificar através do argumento qual é o link que foi navegado. Para visualizarmos as alterações temos que fazer um novo deploy no dispositivo, pois o hot reload não funciona no code behind. Após o deploy, podemos verificar o evento ser invocado logo quando a tela inicial é carregada e em todas as demais navegações que fizermos. Este evento acontece sempre que uma navegação termina.
+
+O evento NAVIGATING funciona da mesma forma, só que ele é acionado antes da navegação ser realizada. Repare que ele é invocado diversas vezes e isso é normal, pois ao navegarmos em um site, é comum existirem redirecionamentos até chegarmos ao destino final de nossa requisição.
+
+Agora você deve estar se perguntando: Mas para que eu preciso monitorar quais os links que estou navegando ou que eu vou navegar? A resposta é simples: Você pode precisar monitorar um determinado link que você está navegando para fazer uma ação dentro do aplicativo, como uma reautenticação de usuário, por exemplo, ou até para interromper o acesso a determinado tipo de página.
+
+##### Roteiro da finalização
+O que você achou deste vídeo? Deixe o seu comentário falando para a gente e não esquece de dar o like para ajudar com que este conteúdo chegue a mais pessoas. Obrigado e até o próximo vídeo!
 
 > #### Capítulo 1.5: Button
 > - Introdução do Button
@@ -64,6 +97,31 @@ As vezes é necessário carregar uma página da internet dentro do aplicativo, e
 ##### Roteiro da intro
 A todo instante fazemos interações nas telas dos devices e geralmente é pra executar uma ação - baixar uma imagem ou salvar as informações de uma tela. Na maioria das vezes isso é feito através de um botão, e é sobre isso que vamos falar agora, um controle chamado Button. Bora lá!
 
+##### Roteiro da demo
+Para exibirmos um botão no aplicativo, utilizamos o controle BUTTON seguido da propriedade TEXT onde definimos o texto do botão. 
+
+Assim como no LABEL, o texto do botão também tem configurações semelhantes, como: alteração da cor do texto, tamanho da fonte, atributos e transformações. Para maiores detalhes, veja o vídeo que fala em detalhes sobre o controle LABEL.
+
+Podemos também definir um cor de fundo através da propriedade BACKGROUND COLOR. O controle está preenchido na tela inteira, então, vou configurar seu layout para centralizar na pagina através das propriedades HORIZONTAL OPTIONS e VERTICAL OPTIONS.
+
+Para definiar uma largura e altura fixa para o botão, usamos as propriedades WIDTH REQUEST e HEIGHT REQUEST, respectivamente.
+
+O botão pode ter bordas arredondadas, e para isso, utilizamos a propriedade CORNER RADIUS, onde especificamos um valor absoluto.
+
+O botão possui bordas, e para que elas aparecem, basta especificarmos a propriedade BORDER WIDTH e inserir o tamanho da borda que desejamos. Ainda sobre a borda, podemos escolher a cor dela usando a propridade BORDER COLOR. 
+
+Podemos inserir uma imagem neste botão através da propriedade IMAGE SOURCE, que pode ser um link da internet o nome da imagem presentes nos resources da aplicação. Não temos muito controle sobre a imagem aqui, então, esteja ciente de que a imagem deve ser pequena e adequada para ser exibida no botão. É importante lembrar que gifs animados não funcionam neste controle. Será exibido apenas o primeiro quadro do gif.
+
+Mas conseguimos alterar o posicionamento da imagem usando a propriedade CONTENT LAYOUT, onde especificamos onde desejamos visualizá-la com as opções LEFT, RIGHT, BOTTOM e TOP. Também podemos especificar uma distância entre a imagem e o texto do botão. Para isso, basta adicionarmos um valor absoluto juntamnete da opção de layout desejada.
+
+Este botão é clicável e podemos vê-lo esmaecido quando clicamos e seguramos. Podemos também capturar esse clique para realizarmos alguma operação no app, e isso pode ser feito através de comandos ou eventos. Agora, apenas vamos ver como isso se dá através de eventos. Basta assinarmos o evento CLICKED. O Visual Studio vai criar um novo método no code behind da tela. Agora, este método está sendo executado toda vez que o botão é clicado e você pode realizar alguma ação a partir daqui.
+
+Além do evento CLICKED, também temos os eventos PRESSED e RELEASED, que são invocados quando o botão é pressionado e solto. A forma que usamos eles é da mesma maneira do evento CLICKED. Cada um destes eventos representa um estado: botão pressionado - que é o evento PRESSED; botão solto - que é o evento RELEASED; e botão clicado - que é o evento CLICKED, que acontece após o botão ter sido soldo.
+
+##### Roteiro da finalização
+Com certeza você vai usar muito esse controle. Gostou do vídeo? Conta para a gente, escreve aí o seu comentário dizendo o que você achou. E não esquece de dar o like no vídeo e se inscrever no canal, blz? Um abraço e até o próximo vídeo!
+
+
 > #### Capítulo 1.6: ImageButton
 > - Complementa o contéudo do Button
 > - Utilização de imagens
@@ -71,12 +129,28 @@ A todo instante fazemos interações nas telas dos devices e geralmente é pra e
 ##### Roteiro da intro
 As vezes queremos que imagens tenham a mesma ação de um botão e nesse vídeo veremos como funciona o controle ImageButton; uma derivação do controle Button. Bora lá!
 
+##### Roteiro da demo
+O IMAGE BUTTON reúne as funcionalidades de um controle de imagem e de um controle de botão em um só. Se você já viu os vídeos anteriores sobre IMAGE e BUTTON, verá que poderá mesclar este conhecimento usando apenas um único controle. Mas existem algumas exceções, por exemplo: uma imagem não possui texto, então, não é possível você adicionar um texto neste botão, somente imagem. Outra limitação é que, assim como no BUTTON, não conseguimos usar gifs animados. Eles aparecerão, mas apenas o primeiro frame.
+
+##### Roteiro da finalização
+E aí! O que você está achando do curso? Comenta aí para a gente saber. Um abraço e até o próximo vídeo!
+
 > #### Capítulo 1.7: Switch
 > - Introdução do Switch
 > - Customização de cores
 
 ##### Roteiro da intro
 É comum existir nos apps telas para ativamos ou desativarmos alguma configuração, por exemplo: para fazer o uso de notificações push ou então habilitar a biometria para poder validar alguma ação no app. Para isso existe um controle chamado Switch e nós vamos descobrir como usar e customizar ele agora. Bora lá!
+
+##### Roteido da demo
+Para visualizá-lo na tela, utilizamos o controle SWITCH. Ele armazena um valor booleano, que é verdadeiro ou falso, e para customizar essse valor, utilizamos a propriedade IS TOGGLED com o valor que desejamos.
+
+As cores que aparecem são as padrões de cada um dos sistemas operacionais que estivermos usando, mas podemos alterar. Com a propriedade ON COLOR, alteramos a cor do controle que é exibido quando ele estiver ativado. Já a propriedade THUMB COLOR altera apenas a cor do item do controle que fica sempre visível.
+
+Quando realizamos a alteração de valor do controle, um evento é invocado. Podemos assinar este evento para realizarmos alguma operação na aplicação. Para isso, assinamos o evento TOGGLED, e aí podemos definir nossa rotina no code behind. No evento que é disparado, conseguimos descobrir se o controle está ativo ou não através do valor no argumento.
+
+##### Roteiro da finalização
+Esse foi mais um vídeo deste curso. O que você está achando? Conta pra gente, deixa o seu comentário aí no vídeo e também dá aquele like, caso tenha gostado. Um abraço e até próxima!
 
 > #### Capítulo 1.8: Picker
 > - Introdução do Picker
@@ -87,6 +161,24 @@ As vezes queremos que imagens tenham a mesma ação de um botão e nesse vídeo 
 ##### Roteiro da intro
 É provável que você já preencheu uma tela de cadastro onde precisou informar o Estado onde você mora. Como os Estados são opções pré-definidos, você não digita eles, você, geralmente, os seleciona. A gente consegue fazer isso também em uma aplicação mobile e, no Xamarin.Forms, a utilizamos o controle Picker. Então, vamos ver como funciona o Picker, customização de cores, fonte, seleção de valor. Blz? Bora lá!
 
+##### Roteiro da demo
+Para vermos o elemento em tela, usamos o controle PICKER e definimos o atributo TITLE. Este texto indica onde está o controle, mas para ficar mais fácil o entendimento, mas vamos colorí-lo usando a propriedade BACKGROUND COLOR. Também vou configurar o layout horizontal e vertical no centro. 
+
+O título configurado possui alguns atributos em comum ao LABEL, tais como FONT ATTRIBUTES e HORIZONTAL TEXT ALIGHMENT. Ele também possui a propriedade para colorir seu texto, que é TITLE COLOR.
+
+Ao clicar no campo, as opções para selecionar aparecem na tela, mas ainda não configuramos nenhuma. Então, vamos atribuir na propriedade ITEMS SOURCE uma lista de strings. Para facilitar a explicação, faremos isso no code behind, para isso, nomeamos o controle no XAML e o utilizamos na classe da tela onde definimos uma lista com valores string e a atribuímos a propriedade ITEMS SOURCE do PICKER. 
+
+Podemos popular o PICKER e já selecionar um valor por padrão. Para isso, usamos a propriedade SELECTED INDEX para indicar qual índice da lista deve ser selecionado. Vou selecionar o índice 2 da lista, que é o último item. Também podemos fazer isso através da propriedade SELECTED ITEM, onde informamos qual o item da lista que deve ser selecionado. Vou selecionar o último item também, mas usando o LINQ do C#.
+
+Ao invés de trabalharmos com tipos string, podemos trabalhar com tipos complexos. No entanto, o PICKER não saberá qual propriedade do objeto complexo deve exibir na tela. Uma maneira fácil de resolver isso é fazendo a sobrecarga do método TO STRING do objeto complexo. É possível realizar isso através de bindings, mas não abordaremos isso neste capítulo.
+
+O valor selecionado possui cor independente, que pode ser customizada através do atributo TEXT COLOR.
+
+Podemos monitorar quando um valor é selecionado, e então, realizar alguma ação no aplicativo. Para isso, assinamos a propriedade SELECTED INDEX CHANGED. Desta forma, podemos verificar qual é o SELECTED INDEX ou SELECTED ITEM que está selecionado no controle.
+
+##### Roteiro da finalização
+E aí, gostou? Conta pra gente o que você está achando do curso, e não esquece de dar o like aí no vídeo. Até o próximo vídeo!
+
 > #### Capítulo 1.9: DatePicker
 > - Introdução do DatePicker
 > - Customização de cores
@@ -95,6 +187,26 @@ As vezes queremos que imagens tenham a mesma ação de um botão e nesse vídeo 
 
 ##### Roteiro da intro
 As vezes precisamos informar uma data no aplicativo, seja para preencher um cadastro ou para fazer um filtro em uma tela. Para isso usamos o DatePicker, um controle com a mesma ideia do Picker mas para fazer seleção de uma data do calendário. Então, vamos ver como usar e customizar esse controle. Bora lá!
+
+##### Roteiro da demo
+Para informarmos um valor de data no aplicativo, usamos o controle DATE PICKER. Por padrão, ele já irá exibir a data atual no controle. A formatação da data depende das configurações de idioma e região do seu device, pois o controle já traduz e localiza automaticamente. 
+
+Para facilitar os exemplos, vou centralizar o controle na horizontal e vertical, e inserir uma cor de fundo.
+
+Algumas propriedades utilizadas no LABEL também estão presentes aqui, como FONT ATTRIBUTES e TEXT COLOR.
+
+Para alterar o formato da data exibida, usamos o atributo FORMAT, onde configuramos o formato baseado na cadeia de caracteres do DateTime do C#. Uma data por extenso, por exemplo, é expressa pela letra D, mas existem diversos tipos de formatações.
+
+Para selecionar uma data, basta clicarmos no controle e fazer a seleção da data desejada. Veja que cada plataforma possui suas particularidades, pois o controle usa os mecanismos nativos de cada plataforma. 
+
+Podemos definir uma data específica utilizando a propriedade DATE. É possível fazer isso diretamente no XAML, mas não é algo comum, pois a data precisa estar em formato específico, que é mês, dia e ano. Então, faremos isso no code behind. Para isso, vou definir um nome para o controle para podermos utilizá-lo lá. Desta forma, conseguimos especificar um objeto do tipo DATE TIME e evitamos erros de formatação.
+
+É possível também definir um range com data mínima e máxima para seleção, basta definirmos valores para as propriedades MINIMUM DATE e MAXIMUM DATE.
+
+Assim como em outros controles, no DATE PICKER também é possível descobrir quando um valor é alterado, para isso, assinamos o evento DATE SELECTED, que é invocado quando uma data no calendário é selecionada. Neste evento, conseguimos descobrir no argumento o novo valor selecionado e também o valor selecionado anteriormente.
+
+##### Roteiro da finalização
+O que você está achando do curso? Escreve o seu comentário dando uma dica ou fazendo uma sugestão. Um abraço e até o próximo vídeo!
 
 > #### Capítulo 1.10: TimePicker
 > - Introdução do TimePicker
@@ -105,12 +217,40 @@ As vezes precisamos informar uma data no aplicativo, seja para preencher um cada
 ##### Roteiro da intro
 Além de data, também podemos informar no aplicativo o valor de um horário, e a gente tem um controle específico para isso: o TimePicker, que é um controle bem parecido com o DatePicker. Vamos ver como funciona? Bora lá!
 
+##### Roteiro da demo
+Para informar um valor de hora no aplicativo, usamos o controle TIME PICKER. Este é um controle que possui um funcionamento muito parecido com o DATE PICKER, mas serve apenas para fazer a seleção de horário. 
+
+Sua formatação também segue a cadeia de caracteres para exibir hora no C#, e este formato pode ser customizado também através da propriedade FORMAT.
+
+Para definir um horário específico, usamos a propriedade TIME. E, assim como o DATE TIME, podemos fazer isso tanto no XAML quanto no code behind. 
+
+O TIME PICKER não possui um evento que é disparado quando uma data é alterada, mas é possível descobrirmos. Para isso, assinamos a propriedade PROPERTY CHANGED e verificamos se a propriedade alterado é a "TIME". Desta forma, descobrimos o valor da hora selecionada no controle.
+
+É importante lembrar que este controle segue os padrões de localização, então, dependendo da região, a data poderá ser visualizada de forma diferente, de 0 à 23 horas ou 0 à 12 horas AM ou PM.
+
+##### Roteiro da finalização
+E aí, gostou? Conta pra gente o que você está achando do curso, e não esquece de dar o like aí no vídeo. Valeu!
+
 > #### Capítulo 1.11: Slider
 > - Introdução do Slider
 > - Customização de cores
 
 ##### Roteiro da intro
 Em determinados aplicativos precisamos realizar ajustes finos em algumas configurações, por exemplo: controlar o volume do áudio ou ajustar o brilho da tela. Pra isso existe o controle Slider, que como o próprio nome já diz, serve pra gente interagir com o controle deslizando o dedo na tela. Vamos conferir como fazer o uso desse controle. Bora lá!
+
+##### Roteiro da demo
+Para utilizar o controle, usamos o SLIDER no XAML ou code behind. Ao inserir o controle, é bom definirmos seu range, então, utilizamos as propriedades MINIMUM e MAXIMUM para delimitar seus valores. Caso não definirmos, o range padrão é de 0 até 1. 
+
+Podemos mover o SLIDER para a posição que desejarmos movendo o botão do controle, ou então, definindo seu valor usando a propriedade VALUE, onde essa propriedade deve obedecer o range definido.
+
+As cores do controle também são customizáveis. Podmeos colorir a barra da esquerda do botão do controle com a propriedade MINIMUM TRACK COLOR, e a barra da direita com a propriedade MAXIMUM TRACK COLOR. 
+
+O botão nós podemos colorir com a propriedade THUMB COLOR, ou então, utilizar uma imagem para exibí-lo com a propriedade THUMB IMAGE SOURCE.
+
+Ao utilizarmos o SLIDER, podemos descobrir seu valor assinando o evento VALUE CHANGED, onde temos disponível no argumento o novo e o antigo valor do controle.
+
+##### Roteiro da finalização
+E aí, o que você está achando do curso? Conta para a gente aí nos comentários e não esquece de dar aquele like no vídeo, caso tenha gostado do conteúdo. Um abraço e até o próximo vídeo!
 
 > #### Capítulo 1.12: Stepper
 > - Introdução do Stepper
@@ -263,7 +403,7 @@ O BoxView é um controle primitivo que te permite criar um rentangulo. Parece al
 O controle de shapes é um dos mais recentes controles do XF, adicionado na versão 4.7. Ele permite criar formas geometricas, simples e complexas de uma maneira _cross-platform_ e através do xaml. Permite também renderizar desenhos em SVG, através de suas coordenadas. Se antes tinhamos apenas o SkiaSharp como solução, para esse tipo de trabalho, agora o Shapes vem se mostrando uma excelente alternativa, em alguns cenários. Vamos dar uma olhada neste controle?
 
 > #### Capítulo 1.29: Propriedades em comum dos controles primitivos
-> - Apresentar as propriedades em comum que muitos controles possuem - Translation, Scale, Rotate..
+> - Apresentar as propriedades em comum que muitos controles possuem - Translation, Scale, Rotate, Margin, Padding, IsVisible, AutomationId, IsEnable..
 
 ## Capítulo 2: Controles de layout
 O objetivo é fazer um overview sobre todos os controles de layout existentes (stacklayout, flexlayout...)
