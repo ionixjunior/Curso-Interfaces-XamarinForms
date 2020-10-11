@@ -5,6 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Button">
     <ContentPage.Content>
-        <Button />
+        <Button
+            BackgroundColor="Orange"
+            BorderColor="Black"
+            BorderWidth="4"
+            Clicked="Button_Clicked"
+            ContentLayout="Top,60"
+            CornerRadius="30"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            ImageSource="banana.png"
+            Pressed="Button_Pressed"
+            Released="Button_Released"
+            Text="Meu primeiro botão"
+            TextColor="Black"
+            TextTransform="Lowercase"
+            VerticalOptions="Center"
+            WidthRequest="300" />
     </ContentPage.Content>
 </ContentPage>

@@ -5,6 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Picker">
     <ContentPage.Content>
-        <Picker />
+        <Picker
+            x:Name="MeuPicker"
+            Title="Selecione um valor"
+            BackgroundColor="Orange"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            SelectedIndexChanged="MeuPicker_SelectedIndexChanged"
+            TextColor="Yellow"
+            TitleColor="Black"
+            VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>

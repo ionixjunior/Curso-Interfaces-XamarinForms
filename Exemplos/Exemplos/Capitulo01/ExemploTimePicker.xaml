@@ -5,6 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="TimePicker">
     <ContentPage.Content>
-        <TimePicker />
+        <TimePicker
+            x:Name="MeuTimePicker"
+            BackgroundColor="Orange"
+            FontAttributes="Bold"
+            Format="t"
+            HorizontalOptions="Center"
+            TextColor="Yellow"
+            Time="11:00"
+            VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>
