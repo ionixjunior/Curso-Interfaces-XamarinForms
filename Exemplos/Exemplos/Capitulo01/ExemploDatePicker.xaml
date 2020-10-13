@@ -5,6 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="DatePicker">
     <ContentPage.Content>
-        <DatePicker />
+        <DatePicker
+            x:Name="MeuDatePicker"
+            BackgroundColor="Orange"
+            Date="8/30/1987"
+            FontAttributes="Bold"
+            Format="D"
+            HorizontalOptions="Center"
+            TextColor="Yellow"
+            VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>

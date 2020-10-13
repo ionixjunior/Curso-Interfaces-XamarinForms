@@ -5,6 +5,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Switch">
     <ContentPage.Content>
-        <Switch />
+        <Switch
+            BackgroundColor="Orange"
+            IsToggled="True"
+            OnColor="Black"
+            ThumbColor="Yellow"
+            Toggled="Switch_Toggled" />
     </ContentPage.Content>
 </ContentPage>

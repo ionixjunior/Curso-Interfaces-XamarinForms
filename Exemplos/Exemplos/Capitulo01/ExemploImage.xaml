@@ -5,6 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Image">
     <ContentPage.Content>
-        <Image />
+        <Image
+            Aspect="AspectFit"
+            BackgroundColor="Orange"
+            HeightRequest="300"
+            HorizontalOptions="Center"
+            IsAnimationPlaying="true"
+            Source="https://media.giphy.com/media/dchERAZ73GvOE/giphy.gif"
+            VerticalOptions="Center"
+            WidthRequest="300" />
     </ContentPage.Content>
 </ContentPage>

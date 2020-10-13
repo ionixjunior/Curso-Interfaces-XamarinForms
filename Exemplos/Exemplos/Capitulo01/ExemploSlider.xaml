@@ -5,6 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="Slider">
     <ContentPage.Content>
-        <Slider />
+        <Slider
+            Maximum="100"
+            MaximumTrackColor="Red"
+            Minimum="0"
+            MinimumTrackColor="Green"
+            ThumbColor="Orange"
+            ThumbImageSource="banana.png"
+            ValueChanged="Slider_ValueChanged"
+            Value="50" />
     </ContentPage.Content>
 </ContentPage>

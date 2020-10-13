@@ -5,6 +5,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="WebView">
     <ContentPage.Content>
-        <WebView />
+        <WebView
+            Navigated="WebView_Navigated"
+            Navigating="WebView_Navigating"
+            Source="https://www.microsoft.com/pt-br/" />
     </ContentPage.Content>
 </ContentPage>
