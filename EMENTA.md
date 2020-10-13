@@ -164,7 +164,7 @@ Esse foi mais um vídeo deste curso. O que você está achando? Conta pra gente,
 ##### Roteiro da demo
 Para vermos o elemento em tela, usamos o controle PICKER e definimos o atributo TITLE. Este texto indica onde está o controle, mas para ficar mais fácil o entendimento, mas vamos colorí-lo usando a propriedade BACKGROUND COLOR. Também vou configurar o layout horizontal e vertical no centro. 
 
-O título configurado possui alguns atributos em comum ao LABEL, tais como FONT ATTRIBUTES e HORIZONTAL TEXT ALIGHMENT. Ele também possui a propriedade para colorir seu texto, que é TITLE COLOR.
+O título configurado possui alguns atributos em comum ao LABEL, tais como FONT ATTRIBUTES e HORIZONTAL TEXT ALIGNMENT. Ele também possui a propriedade para colorir seu texto, que é TITLE COLOR.
 
 Ao clicar no campo, as opções para selecionar aparecem na tela, mas ainda não configuramos nenhuma. Então, vamos atribuir na propriedade ITEMS SOURCE uma lista de strings. Para facilitar a explicação, faremos isso no code behind, para isso, nomeamos o controle no XAML e o utilizamos na classe da tela onde definimos uma lista com valores string e a atribuímos a propriedade ITEMS SOURCE do PICKER. 
 
