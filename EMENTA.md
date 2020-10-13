@@ -132,6 +132,12 @@ As vezes queremos que imagens tenham a mesma ação de um botão e nesse vídeo 
 ##### Roteiro da demo
 O IMAGE BUTTON reúne as funcionalidades de um controle de imagem e de um controle de botão em um só. Se você já viu os vídeos anteriores sobre IMAGE e BUTTON, verá que poderá mesclar este conhecimento usando apenas um único controle. Mas existem algumas exceções, por exemplo: uma imagem não possui texto, então, não é possível você adicionar um texto neste botão, somente imagem. Outra limitação é que, assim como no BUTTON, não conseguimos usar gifs animados. Eles aparecerão, mas apenas o primeiro frame.
 
+Um ponto importante a destacar no IMAGE BUTTON é a possibilidade de utilizarmos um espaçamento interno para a renderização do botão. Vamos supor que estamos usando um ícone pequeno para o botão, então, a área clicável dele será menor do que a de um botão convencional e talvez prejudique a usabilidade de quem usar o aplicativo. Como fazemos para aumentar a área clicável deste botão e melhorar a experiência do usuário? Podemos fazer isso através da propriedade PADDING. Com ela, definimos um valor do espaçamento interno do botão. O valor deve ser inserido de forma absoluta e, quando especificado apenas 1 valor, vale para todas as extremidadas da imagem do botão. 
+
+Mas podemos definir valores diferentes para cada extremidade, basta inserirmos os 4 valores separados por vírgula, começando pelo valor da esquerda, topo, direita e rodapé. Podemos também simplificar essa declaração inserindo 2 valores separados por vírgula, onde o primeiro valor corresponde a esquerda e direita e o segundo valor corresponde ao topo e rodapé. 
+
+Muitos controles possuem a propriedade PADDING, e nós vamos abordar isso com detalhes mais para frente.
+
 ##### Roteiro da finalização
 E aí! O que você está achando do curso? Comenta aí para a gente saber. Um abraço e até o próximo vídeo!
 
@@ -184,6 +190,9 @@ E aí, gostou? Conta pra gente o que você está achando do curso, e não esquec
 > - Customização de cores
 > - Fonte
 > - Seleção de data
+
+##### Links úteis
+- https://docs.microsoft.com/pt-br/dotnet/standard/base-types/custom-date-and-time-format-strings
 
 ##### Roteiro da intro
 As vezes precisamos informar uma data no aplicativo, seja para preencher um cadastro ou para fazer um filtro em uma tela. Para isso usamos o DatePicker, um controle com a mesma ideia do Picker mas para fazer seleção de uma data do calendário. Então, vamos ver como usar e customizar esse controle. Bora lá!
