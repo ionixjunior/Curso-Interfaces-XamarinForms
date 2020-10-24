@@ -37,7 +37,7 @@ Em textos grandes, talvez seja necessário limitar a exibição dos caracteres. 
 
 Podemos também configurar a quantidade de linhas que queremos exibir usando a propriedade MAX LINES. 
 
-O texto pode ser alinhado horizontalmente com a propriedade HORIZONTAL TEXT ALIGHMENT. Por padrão, ele é alinhado com o valor START, mas podemos configurar como END ou CENTER.
+O texto pode ser alinhado horizontalmente com a propriedade HORIZONTAL TEXT ALIGNMENT. Por padrão, ele é alinhado com o valor START, mas podemos configurar como END ou CENTER.
 
 Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGNMENT, que funciona com os mesmos valores da propriedade de alinhamento horizontal.
 
