@@ -39,7 +39,7 @@ Podemos também configurar a quantidade de linhas que queremos exibir usando a p
 
 O texto pode ser alinhado horizontalmente com a propriedade HORIZONTAL TEXT ALIGHMENT. Por padrão, ele é alinhado com o valor START, mas podemos configurar como END ou CENTER.
 
-Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGHMENT, que funciona com os mesmos valores da propriedade de alinhamento horizontal.
+Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGNMENT, que funciona com os mesmos valores da propriedade de alinhamento horizontal.
 
 ##### Roteiro da finalização
 Agora que você já sabe trabalhar com o LABEL, vamos ver como é trabalhar com os demais controles. Te vejo no próximo vídeo!
