@@ -19,7 +19,7 @@ Para representar um texto na tela, usamos o controle LABEL. E para inserir esse 
 
 Para alterar a cor do texto que inserimos, usamos a propriedade TEXT COLOR. Essa propriedade espera uma cor do framework, que pode ser informada usando as cores nomeadas.. ou então definida através de um valor hexadecimal.
 
-Para alterar a cor de fundo do texto, usamos a propriedade BACKGROUND COLOR. Ela pode receber os mesmos tipos de valor que a propriedade TEXT COLOR. FALAR SOBRE O POSICIONAMENTO EM RELAÇÃO AO PAI; LAYOUT
+Para alterar a cor de fundo do texto, usamos a propriedade BACKGROUND COLOR. Ela pode receber os mesmos tipos de valor que a propriedade TEXT COLOR.
 
 Para alterar o tamanho do texto, usamos a propriedade FONT SIZE, onde podemos definir o tamanho usando um valor absoluto ou usando o tamanho das fontes nomeadas pelo sistema. Usar os valores de fontes nomeadas é importante para a acessibilidade, pois eles respeitam as configurações de acessibilidade realizadas no device.
 
@@ -33,13 +33,13 @@ Existe também algumas transformações que podemos fazer no texto, e fazemos is
 
 Para ajustar o espaçamento entre caracteres, usamos a propriedade CHARACTER SPACING, onde informamos um valor absoluto.
 
-Em textos grandes, talvez seja necessário limitar a exibição dos caracteres. Para isso, usamos a propriedade LINE BREAK MODE. A configuração mais comum é TAIL TRUNCATION, onde o texto é truncado no final e é inserido 3 pontos no final do texto indicando que o mesmo não acabou. Mas o texto também pode ser truncado no começo com HEAD TRUNCATION, no centro com MIDDLE TRUNCATION, o truncamento pode ser ignorado com a propriedade NO WRAP.. ou o truncamento pode ser feito através de palavras com WORDWRAP. AQUI É IMPORTANTE REVISAR POIS WORDWRAP NÃO É TRUNCADO
+Em textos grandes, talvez seja necessário limitar a exibição dos caracteres. Para isso, usamos a propriedade LINE BREAK MODE. A configuração mais comum é TAIL TRUNCATION, onde o texto é truncado no final e é inserido 3 pontos no final do texto indicando que o mesmo não acabou. Mas o texto também pode ser truncado no começo com HEAD TRUNCATION, no centro com MIDDLE TRUNCATION, o truncamento pode ser ignorado com a propriedade NO WRAP, ou ao invés do truncamento, pode ser feita a quebra de linha entre caracteres usando CHARACTER WRAP. A opção padrão é a WORD WRAP, que faz a quebra de linha por palavras.
 
 Podemos também configurar a quantidade de linhas que queremos exibir usando a propriedade MAX LINES. 
 
 O texto pode ser alinhado horizontalmente com a propriedade HORIZONTAL TEXT ALIGHMENT. Por padrão, ele é alinhado com o valor START, mas podemos configurar como END ou CENTER.
 
-Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGHMENT, que funciona da mesma forma que o alinhamento horizontal.
+Também podemos alinhar o texto verticalmente com a propriedade VERTICAL TEXT ALIGHMENT, que funciona com os mesmos valores da propriedade de alinhamento horizontal.
 
 ##### Roteiro da finalização
 Agora que você já sabe trabalhar com o LABEL, vamos ver como é trabalhar com os demais controles. Te vejo no próximo vídeo!
@@ -104,13 +104,13 @@ Assim como no LABEL, o texto do botão também tem configurações semelhantes, 
 
 Podemos também definir um cor de fundo através da propriedade BACKGROUND COLOR. O controle está preenchido na tela inteira, então, vou configurar seu layout para centralizar na pagina através das propriedades HORIZONTAL OPTIONS e VERTICAL OPTIONS.
 
-Para definiar uma largura e altura fixa para o botão, usamos as propriedades WIDTH REQUEST e HEIGHT REQUEST, respectivamente.
+Para definir uma largura e altura fixa para o botão, usamos as propriedades WIDTH REQUEST e HEIGHT REQUEST, respectivamente.
 
 O botão pode ter bordas arredondadas, e para isso, utilizamos a propriedade CORNER RADIUS, onde especificamos um valor absoluto.
 
 O botão possui bordas, e para que elas aparecem, basta especificarmos a propriedade BORDER WIDTH e inserir o tamanho da borda que desejamos. Ainda sobre a borda, podemos escolher a cor dela usando a propridade BORDER COLOR. 
 
-Podemos inserir uma imagem neste botão através da propriedade IMAGE SOURCE, que pode ser um link da internet o nome da imagem presentes nos resources da aplicação. Não temos muito controle sobre a imagem aqui, então, esteja ciente de que a imagem deve ser pequena e adequada para ser exibida no botão. É importante lembrar que gifs animados não funcionam neste controle. Será exibido apenas o primeiro quadro do gif.
+Podemos inserir uma imagem neste botão através da propriedade IMAGE SOURCE, que pode ser um link da internet ou o nome da imagem presentes nos resources da aplicação. Não temos muito controle sobre a imagem aqui, então, esteja ciente de que a imagem deve ser pequena e adequada para ser exibida no botão. É importante lembrar que gifs animados não funcionam neste controle. Será exibido apenas o primeiro quadro do gif.
 
 Mas conseguimos alterar o posicionamento da imagem usando a propriedade CONTENT LAYOUT, onde especificamos onde desejamos visualizá-la com as opções LEFT, RIGHT, BOTTOM e TOP. Também podemos especificar uma distância entre a imagem e o texto do botão. Para isso, basta adicionarmos um valor absoluto juntamnete da opção de layout desejada.
 
@@ -149,7 +149,7 @@ E aí! O que você está achando do curso? Comenta aí para a gente saber. Um ab
 É comum existir nos apps telas para ativamos ou desativarmos alguma configuração, por exemplo: para fazer o uso de notificações push ou então habilitar a biometria para poder validar alguma ação no app. Para isso existe um controle chamado Switch e nós vamos descobrir como usar e customizar ele agora. Bora lá!
 
 ##### Roteido da demo
-Para visualizá-lo na tela, utilizamos o controle SWITCH. Ele armazena um valor booleano, que é verdadeiro ou falso, e para customizar essse valor, utilizamos a propriedade IS TOGGLED com o valor que desejamos.
+Para visualizá-lo na tela, utilizamos o controle SWITCH. Ele armazena um valor booleano, que é verdadeiro ou falso, e para customizar esse valor, utilizamos a propriedade IS TOGGLED com o valor que desejamos.
 
 As cores que aparecem são as padrões de cada um dos sistemas operacionais que estivermos usando, mas podemos alterar. Com a propriedade ON COLOR, alteramos a cor do controle que é exibido quando ele estiver ativado. Já a propriedade THUMB COLOR altera apenas a cor do item do controle que fica sempre visível.
 
@@ -168,11 +168,11 @@ Esse foi mais um vídeo deste curso. O que você está achando? Conta pra gente,
 É provável que você já preencheu uma tela de cadastro onde precisou informar o Estado onde você mora. Como os Estados são opções pré-definidos, você não digita eles, você, geralmente, os seleciona. A gente consegue fazer isso também em uma aplicação mobile e, no Xamarin.Forms, a utilizamos o controle Picker. Então, vamos ver como funciona o Picker, customização de cores, fonte, seleção de valor. Blz? Bora lá!
 
 ##### Roteiro da demo
-Para vermos o elemento em tela, usamos o controle PICKER e definimos o atributo TITLE. Este texto indica onde está o controle, mas para ficar mais fácil o entendimento, mas vamos colorí-lo usando a propriedade BACKGROUND COLOR. Também vou configurar o layout horizontal e vertical no centro. 
+Para vermos o elemento em tela, usamos o controle PICKER e definimos o atributo TITLE. Este texto indica onde está o controle, mas para ficar mais fácil o entendimento, vamos colorí-lo usando a propriedade BACKGROUND COLOR. Também vou configurar o layout horizontal e vertical no centro. 
 
 O título configurado possui alguns atributos em comum ao LABEL, tais como FONT ATTRIBUTES e HORIZONTAL TEXT ALIGNMENT. Ele também possui a propriedade para colorir seu texto, que é TITLE COLOR.
 
-Ao clicar no campo, as opções para selecionar aparecem na tela, mas ainda não configuramos nenhuma. Então, vamos atribuir na propriedade ITEMS SOURCE uma lista de strings. Para facilitar a explicação, faremos isso no code behind, para isso, nomeamos o controle no XAML e o utilizamos na classe da tela onde definimos uma lista com valores string e a atribuímos a propriedade ITEMS SOURCE do PICKER. 
+Ao clicar neste controle, as opções para selecionar aparecem na tela, mas ainda não configuramos nenhuma. Então, vamos atribuir na propriedade ITEMS SOURCE uma lista de strings. Para facilitar a explicação, faremos isso no code behind, para isso, nomeamos o controle no XAML para utilizarmos ele na classe da tela, onde vamos definir uma lista com valores string e a atribuímos na propriedade ITEMS SOURCE do PICKER. 
 
 Podemos popular o PICKER e já selecionar um valor por padrão. Para isso, usamos a propriedade SELECTED INDEX para indicar qual índice da lista deve ser selecionado. Vou selecionar o índice 2 da lista, que é o último item. Também podemos fazer isso através da propriedade SELECTED ITEM, onde informamos qual o item da lista que deve ser selecionado. Vou selecionar o último item também, mas usando o LINQ do C#.
 
@@ -180,7 +180,7 @@ Ao invés de trabalharmos com tipos string, podemos trabalhar com tipos complexo
 
 O valor selecionado possui cor independente, que pode ser customizada através do atributo TEXT COLOR.
 
-Podemos monitorar quando um valor é selecionado, e então, realizar alguma ação no aplicativo. Para isso, assinamos a propriedade SELECTED INDEX CHANGED. Desta forma, podemos verificar qual é o SELECTED INDEX ou SELECTED ITEM que está selecionado no controle.
+Podemos monitorar quando um valor é selecionado, e então, realizar alguma ação no aplicativo. Para isso, assinamos o evento SELECTED INDEX CHANGED. Desta forma, podemos verificar qual é o SELECTED INDEX ou SELECTED ITEM que está selecionado no controle.
 
 ##### Roteiro da finalização
 E aí, gostou? Conta pra gente o que você está achando do curso, e não esquece de dar o like aí no vídeo. Até o próximo vídeo!
@@ -198,9 +198,9 @@ E aí, gostou? Conta pra gente o que você está achando do curso, e não esquec
 As vezes precisamos informar uma data no aplicativo, seja para preencher um cadastro ou para fazer um filtro em uma tela. Para isso usamos o DatePicker, um controle com a mesma ideia do Picker mas para fazer seleção de uma data do calendário. Então, vamos ver como usar e customizar esse controle. Bora lá!
 
 ##### Roteiro da demo
-Para informarmos um valor de data no aplicativo, usamos o controle DATE PICKER. Por padrão, ele já irá exibir a data atual no controle. A formatação da data depende das configurações de idioma e região do seu device, pois o controle já traduz e localiza automaticamente. 
+Para informarmos um valor de data no aplicativo, usamos o controle DATE PICKER. Por padrão, ele já irá exibir a data atual no controle. A formatação desta data depende das configurações de idioma e região do seu dispositivo, pois o controle já traduz e localiza automaticamente. 
 
-Para facilitar os exemplos, vou centralizar o controle na horizontal e vertical, e inserir uma cor de fundo.
+Para facilitar o entendimento dos exemplos, vou centralizar o controle na horizontal e vertical, e inserir uma cor de fundo.
 
 Algumas propriedades utilizadas no LABEL também estão presentes aqui, como FONT ATTRIBUTES e TEXT COLOR.
 
@@ -208,11 +208,11 @@ Para alterar o formato da data exibida, usamos o atributo FORMAT, onde configura
 
 Para selecionar uma data, basta clicarmos no controle e fazer a seleção da data desejada. Veja que cada plataforma possui suas particularidades, pois o controle usa os mecanismos nativos de cada plataforma. 
 
-Podemos definir uma data específica utilizando a propriedade DATE. É possível fazer isso diretamente no XAML, mas não é algo comum, pois a data precisa estar em formato específico, que é mês, dia e ano. Então, faremos isso no code behind. Para isso, vou definir um nome para o controle para podermos utilizá-lo lá. Desta forma, conseguimos especificar um objeto do tipo DATE TIME e evitamos erros de formatação.
+Podemos definir uma data específica utilizando a propriedade DATE. É possível fazer isso diretamente no XAML, mas não é algo comum, pois a data precisa estar em formato específico, que é mês, dia e ano. Então, faremos isso no code behind. Para isso, vou definir um nome para o controle para podermos utilizá-lo lá na classe da tela. Desta forma, conseguimos especificar um objeto do tipo DATE TIME e evitamos erros de formatação.
 
 É possível também definir um range com data mínima e máxima para seleção, basta definirmos valores para as propriedades MINIMUM DATE e MAXIMUM DATE.
 
-Assim como em outros controles, no DATE PICKER também é possível descobrir quando um valor é alterado, para isso, assinamos o evento DATE SELECTED, que é invocado quando uma data no calendário é selecionada. Neste evento, conseguimos descobrir no argumento o novo valor selecionado e também o valor selecionado anteriormente.
+Assim como em outros controles, no DATE PICKER também é possível descobrir quando um valor foi alterado, para isso, assinamos o evento DATE SELECTED, que é invocado quando uma data no calendário é selecionada. Neste evento, conseguimos descobrir no argumento o novo valor selecionado e também o valor selecionado anteriormente.
 
 ##### Roteiro da finalização
 O que você está achando do curso? Escreve o seu comentário dando uma dica ou fazendo uma sugestão. Um abraço e até o próximo vídeo!
@@ -233,7 +233,7 @@ Sua formatação também segue a cadeia de caracteres para exibir hora no C#, e 
 
 Para definir um horário específico, usamos a propriedade TIME. E, assim como o DATE TIME, podemos fazer isso tanto no XAML quanto no code behind. 
 
-O TIME PICKER não possui um evento que é disparado quando uma data é alterada, mas é possível descobrirmos. Para isso, assinamos a propriedade PROPERTY CHANGED e verificamos se a propriedade alterado é a "TIME". Desta forma, descobrimos o valor da hora selecionada no controle.
+O TIME PICKER não possui um evento que é disparado quando uma hora é selecionada, mas é possível descobrirmos quando isso acontece. Para isso, assinamos o evento PROPERTY CHANGED e verificamos se a propriedade alterada é a "TIME". Desta forma, descobrimos o valor da hora selecionada no controle.
 
 É importante lembrar que este controle segue os padrões de localização, então, dependendo da região, a data poderá ser visualizada de forma diferente, de 0 à 23 horas ou 0 à 12 horas AM ou PM.
 
@@ -252,7 +252,7 @@ Para utilizar o controle, usamos o SLIDER no XAML ou code behind. Ao inserir o c
 
 Podemos mover o SLIDER para a posição que desejarmos movendo o botão do controle, ou então, definindo seu valor usando a propriedade VALUE, onde essa propriedade deve obedecer o range definido.
 
-As cores do controle também são customizáveis. Podmeos colorir a barra da esquerda do botão do controle com a propriedade MINIMUM TRACK COLOR, e a barra da direita com a propriedade MAXIMUM TRACK COLOR. 
+As cores do controle também são customizáveis. Podemos colorir a barra da esquerda do botão do controle com a propriedade MINIMUM TRACK COLOR, e a barra da direita com a propriedade MAXIMUM TRACK COLOR. 
 
 O botão nós podemos colorir com a propriedade THUMB COLOR, ou então, utilizar uma imagem para exibí-lo com a propriedade THUMB IMAGE SOURCE.
 
