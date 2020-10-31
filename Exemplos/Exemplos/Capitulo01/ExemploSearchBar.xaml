@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Exemplos.Capitulo01.ExemploSearchBar"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SearchBar">
+    <ContentPage.Content>
+        <SearchBar
+            x:Name="searchBar"
+            Placeholder="Digite a cidade aqui"
+            PlaceholderColor="Red"
+            SearchButtonPressed="SearchBar_SearchButtonPressed"
+            TextColor="Fuschia"
+            TextTransform="Uppercase" />
+    </ContentPage.Content>
+</ContentPage>
