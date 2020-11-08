@@ -7,15 +7,15 @@
     <ContentPage.Content>
         <Label
             BackgroundColor="Orange"
-            CharacterSpacing="10"
-            FontAttributes="Italic"
-            FontSize="Title"
+            CharacterSpacing="0"
+            FontAttributes="Italic,Bold"
+            FontSize="60"
             HorizontalTextAlignment="Center"
             LineBreakMode="WordWrap"
             MaxLines="2"
             Text="Olá, aqui está meu primeiro texto!"
             TextColor="#0000ff"
-            TextDecorations="Underline"
+            TextDecorations="Underline,Strikethrough"
             TextTransform="Uppercase"
             VerticalTextAlignment="Center" />
     </ContentPage.Content>
