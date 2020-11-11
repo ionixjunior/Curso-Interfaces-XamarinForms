@@ -21,13 +21,13 @@ Para alterar a cor do texto que inserimos, usamos a propriedade TEXT COLOR. Essa
 
 Para alterar a cor de fundo do texto, usamos a propriedade BACKGROUND COLOR. Ela pode receber os mesmos tipos de valor que a propriedade TEXT COLOR.
 
-Para alterar o tamanho do texto, usamos a propriedade FONT SIZE, onde podemos definir o tamanho usando um valor absoluto ou usando o tamanho das fontes nomeadas pelo sistema. Usar os valores de fontes nomeadas é importante para a acessibilidade, pois eles respeitam as configurações de acessibilidade realizadas no device.
+Para alterar o tamanho do texto, usamos a propriedade FONT SIZE, onde podemos definir o tamanho usando um valor absoluto ou usando o tamanho das fontes nomeadas pelo sistema. Usar os valores de fontes nomeadas é importante para a acessibilidade, pois eles respeitam as configurações de acessibilidade realizadas no device. Para este exemplo, vou usar um tamanho de fonte absoluto para facilitar a explicação.
 
-Para alterar o tipo de fonte, usamos a propriedade FONT FAMILY, onde informamos as fontes que estão instaladas no SO. Podemos utilizar fontes customizadas, mas não vamos abordar isso agora.
+Para alterar o tipo de fonte, usamos a propriedade FONT FAMILY, onde informamos as fontes que estão instaladas no SO. Podemos utilizar fontes customizadas, mas não vamos abordar isso agora. É importante lembrar que as fontes disponíveis em cada sistema operacional são diferentes, então, vou descartar essa propriedade agora e deixar isso para um capítulo avançado.
 
-Existem alguns atributos que podemos customizar nas fontes, para isso, usamos a propriedade FONT ATTRIBUTES, onde podemos ajustá-la como BOLD ou ITALIC.
+Existem alguns atributos que podemos customizar nas fontes, para isso, usamos a propriedade FONT ATTRIBUTES, onde podemos ajustá-la como BOLD, ITALIC ou combiná-las, separando os valores por vírgula.
 
-Podemos também decorar um texto usando a propriedade TEXT DECORATION, onde podemos inserir um efeito de texto riscado.. ou sublinhado.
+Podemos também decorar um texto usando a propriedade TEXT DECORATION, onde podemos inserir um efeito de texto riscado, sublinhado, ou combiná-los, igual fizemos na propriedade anterior.
 
 Existe também algumas transformações que podemos fazer no texto, e fazemos isso através da propriedade TEXT TRANSFORM. Com ela, podemos alterar o texto para deixar todas as letras minúsculas… ou maiúsculas.
 
