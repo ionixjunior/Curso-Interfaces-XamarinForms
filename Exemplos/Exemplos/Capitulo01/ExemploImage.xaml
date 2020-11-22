@@ -10,8 +10,8 @@
             BackgroundColor="Orange"
             HeightRequest="300"
             HorizontalOptions="Center"
-            IsAnimationPlaying="true"
-            Source="https://media.giphy.com/media/dchERAZ73GvOE/giphy.gif"
+            IsAnimationPlaying="True"
+            Source="monkey_phone.gif"
             VerticalOptions="Center"
             WidthRequest="300" />
     </ContentPage.Content>
