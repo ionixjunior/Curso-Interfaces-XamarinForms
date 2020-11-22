@@ -136,5 +136,6 @@
   <ItemGroup>
     <BundleResource Include="Resources\banana.png" />
     <BundleResource Include="Resources\monkey.jpg" />
+    <BundleResource Include="Resources\monkey_phone.gif" />
   </ItemGroup>
 </Project>
