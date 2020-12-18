@@ -112,11 +112,11 @@ O botão possui bordas, e para que elas aparecem, basta especificarmos a proprie
 
 Podemos inserir uma imagem neste botão através da propriedade IMAGE SOURCE, que pode ser um link da internet ou o nome da imagem presentes nos resources da aplicação. Não temos muito controle sobre a imagem aqui, então, esteja ciente de que a imagem deve ser pequena e adequada para ser exibida no botão. É importante lembrar que gifs animados não funcionam neste controle. Será exibido apenas o primeiro quadro do gif.
 
-Mas conseguimos alterar o posicionamento da imagem usando a propriedade CONTENT LAYOUT, onde especificamos onde desejamos visualizá-la com as opções LEFT, RIGHT, BOTTOM e TOP. Também podemos especificar uma distância entre a imagem e o texto do botão. Para isso, basta adicionarmos um valor absoluto juntamnete da opção de layout desejada.
+Mas conseguimos alterar o posicionamento da imagem usando a propriedade CONTENT LAYOUT, onde especificamos onde desejamos visualizá-la com as opções LEFT, RIGHT, BOTTOM e TOP. Também podemos especificar uma distância entre a imagem e o texto do botão. Para isso, basta adicionarmos um valor absoluto juntamente da opção de layout desejada.
 
 Este botão é clicável e podemos vê-lo esmaecido quando clicamos e seguramos. Podemos também capturar esse clique para realizarmos alguma operação no app, e isso pode ser feito através de comandos ou eventos. Agora, apenas vamos ver como isso se dá através de eventos. Basta assinarmos o evento CLICKED. O Visual Studio vai criar um novo método no code behind da tela. Agora, este método está sendo executado toda vez que o botão é clicado e você pode realizar alguma ação a partir daqui.
 
-Além do evento CLICKED, também temos os eventos PRESSED e RELEASED, que são invocados quando o botão é pressionado e solto. A forma que usamos eles é da mesma maneira do evento CLICKED. Cada um destes eventos representa um estado: botão pressionado - que é o evento PRESSED; botão solto - que é o evento RELEASED; e botão clicado - que é o evento CLICKED, que acontece após o botão ter sido soldo.
+Além do evento CLICKED, também temos os eventos PRESSED e RELEASED, que são invocados quando o botão é pressionado e solto. A forma que usamos eles é da mesma maneira do evento CLICKED. Cada um destes eventos representa um estado: botão pressionado - que é o evento PRESSED; botão solto - que é o evento RELEASED; e botão clicado - que é o evento CLICKED, que acontece após o botão ter sido solto.
 
 ##### Roteiro da finalização
 Com certeza você vai usar muito esse controle. Gostou do vídeo? Conta para a gente, escreve aí o seu comentário dizendo o que você achou. E não esquece de dar o like no vídeo e se inscrever no canal, blz? Um abraço e até o próximo vídeo!
@@ -130,7 +130,7 @@ Com certeza você vai usar muito esse controle. Gostou do vídeo? Conta para a g
 As vezes queremos que imagens tenham a mesma ação de um botão e nesse vídeo veremos como funciona o controle ImageButton; uma derivação do controle Button. Bora lá!
 
 ##### Roteiro da demo
-O IMAGE BUTTON reúne as funcionalidades de um controle de imagem e de um controle de botão em um só. Se você já viu os vídeos anteriores sobre IMAGE e BUTTON, verá que poderá mesclar este conhecimento usando apenas um único controle. Mas existem algumas exceções, por exemplo: uma imagem não possui texto, então, não é possível você adicionar um texto neste botão, somente imagem. Outra limitação é que, assim como no BUTTON, não conseguimos usar gifs animados. Eles aparecerão, mas apenas o primeiro frame.
+O IMAGE BUTTON reúne as funcionalidades de um controle de imagem e de um controle de botão em um só. Se você já viu os vídeos anteriores sobre IMAGE e BUTTON, verá que poderá mesclar este conhecimento usando apenas um único controle. Mas existem algumas exceções, por exemplo: a imagem não possui texto, então, não é possível você adicionar um texto neste botão, somente imagem. Outra limitação é que, assim como no BUTTON, não conseguimos usar gifs animados. Eles aparecerão, mas apenas o primeiro frame.
 
 Um ponto importante a destacar no IMAGE BUTTON é a possibilidade de utilizarmos um espaçamento interno para a renderização do botão. Vamos supor que estamos usando um ícone pequeno para o botão, então, a área clicável dele será menor do que a de um botão convencional e talvez prejudique a usabilidade de quem usar o aplicativo. Como fazemos para aumentar a área clicável deste botão e melhorar a experiência do usuário? Podemos fazer isso através da propriedade PADDING. Com ela, definimos um valor do espaçamento interno do botão. O valor deve ser inserido de forma absoluta e, quando especificado apenas 1 valor, vale para todas as extremidadas da imagem do botão. 
 
@@ -149,11 +149,11 @@ E aí! O que você está achando do curso? Comenta aí para a gente saber. Um ab
 É comum existir nos apps telas para ativamos ou desativarmos alguma configuração, por exemplo: para fazer o uso de notificações push ou então habilitar a biometria para poder validar alguma ação no app. Para isso existe um controle chamado Switch e nós vamos descobrir como usar e customizar ele agora. Bora lá!
 
 ##### Roteido da demo
-Para visualizá-lo na tela, utilizamos o controle SWITCH. Ele armazena um valor booleano, que é verdadeiro ou falso, e para customizar esse valor, utilizamos a propriedade IS TOGGLED com o valor que desejamos.
+Para visualizá-lo na tela, utilizamos o controle SWITCH. Ele armazena um valor booleano, que é verdadeiro ou falso, e para customizar esse valor, utilizamos a propriedade IS TOGGLED com o valor que desejarmos.
 
-As cores que aparecem são as padrões de cada um dos sistemas operacionais que estivermos usando, mas podemos alterar. Com a propriedade ON COLOR, alteramos a cor do controle que é exibido quando ele estiver ativado. Já a propriedade THUMB COLOR altera apenas a cor do item do controle que fica sempre visível.
+As cores que aparecem são as padrões de cada um dos sistemas operacionais que estivermos utilizando, mas podemos alterar. Com a propriedade ON COLOR, alteramos a cor do controle que é exibido quando ele estiver ativado. Já a propriedade THUMB COLOR altera apenas a cor do item do controle que fica sempre visível.
 
-Quando realizamos a alteração de valor do controle, um evento é invocado. Podemos assinar este evento para realizarmos alguma operação na aplicação. Para isso, assinamos o evento TOGGLED, e aí podemos definir nossa rotina no code behind. No evento que é disparado, conseguimos descobrir se o controle está ativo ou não através do valor no argumento.
+Quando realizamos a alteração de valor do controle, um evento é invocado. Podemos assinar este evento para realizarmos alguma operação no aplicativo. Para isso, assinamos o evento TOGGLED, e aí podemos definir nossa rotina no code behind. No evento que é disparado, conseguimos descobrir se o controle está ativo ou não através do valor no argumento.
 
 ##### Roteiro da finalização
 Esse foi mais um vídeo deste curso. O que você está achando? Conta pra gente, deixa o seu comentário aí no vídeo e também dá aquele like, caso tenha gostado. Um abraço e até próxima!
@@ -231,7 +231,7 @@ Para informar um valor de hora no aplicativo, usamos o controle TIME PICKER. Est
 
 Sua formatação também segue a cadeia de caracteres para exibir hora no C#, e este formato pode ser customizado também através da propriedade FORMAT.
 
-Para definir um horário específico, usamos a propriedade TIME. E, assim como o DATE TIME, podemos fazer isso tanto no XAML quanto no code behind. 
+Para definir um horário específico, usamos a propriedade TIME. E, assim como o DATE PICKER, podemos fazer isso tanto no XAML quanto no code behind. 
 
 O TIME PICKER não possui um evento que é disparado quando uma hora é selecionada, mas é possível descobrirmos quando isso acontece. Para isso, assinamos o evento PROPERTY CHANGED e verificamos se a propriedade alterada é a "TIME". Desta forma, descobrimos o valor da hora selecionada no controle.
 
