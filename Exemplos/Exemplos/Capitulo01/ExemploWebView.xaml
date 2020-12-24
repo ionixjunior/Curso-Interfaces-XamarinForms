@@ -8,6 +8,6 @@
         <WebView
             Navigated="WebView_Navigated"
             Navigating="WebView_Navigating"
-            Source="https://www.microsoft.com/pt-br/" />
+            Source="https://www.microsoft.com" />
     </ContentPage.Content>
 </ContentPage>
