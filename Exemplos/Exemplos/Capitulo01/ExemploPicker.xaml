@@ -7,13 +7,13 @@
     <ContentPage.Content>
         <Picker
             x:Name="MeuPicker"
-            Title="Selecione um valor"
+            Title="Selecione um item"
             BackgroundColor="Orange"
             FontAttributes="Bold"
             HorizontalOptions="Center"
             HorizontalTextAlignment="Center"
             SelectedIndexChanged="MeuPicker_SelectedIndexChanged"
-            TextColor="Yellow"
+            TextColor="Blue"
             TitleColor="Black"
             VerticalOptions="Center" />
     </ContentPage.Content>
