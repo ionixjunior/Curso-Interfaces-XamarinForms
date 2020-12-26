@@ -121,6 +121,8 @@ Além do evento CLICKED, também temos os eventos PRESSED e RELEASED, que são i
 ##### Roteiro da finalização
 Com certeza você vai usar muito esse controle. Gostou do vídeo? Conta para a gente, escreve aí o seu comentário dizendo o que você achou. E não esquece de dar o like no vídeo e se inscrever no canal, blz? Um abraço e até o próximo vídeo!
 
+##### Bugs relacionados
+- https://github.com/xamarin/Xamarin.Forms/issues/9227
 
 > #### Capítulo 1.6: ImageButton
 > - Complementa o contéudo do Button
