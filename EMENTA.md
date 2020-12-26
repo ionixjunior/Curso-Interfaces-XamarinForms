@@ -155,7 +155,7 @@ Para visualizá-lo na tela, utilizamos o controle SWITCH. Ele armazena um valor 
 
 As cores que aparecem são as padrões de cada um dos sistemas operacionais que estivermos utilizando, mas podemos alterar. Com a propriedade ON COLOR, alteramos a cor do controle que é exibido quando ele estiver ativado. Já a propriedade THUMB COLOR altera apenas a cor do item do controle que fica sempre visível.
 
-Quando realizamos a alteração de valor do controle, um evento é invocado. Podemos assinar este evento para realizarmos alguma operação no aplicativo. Para isso, assinamos o evento TOGGLED, e aí podemos definir nossa rotina no code behind. No evento que é disparado, conseguimos descobrir se o controle está ativo ou não através do valor no argumento.
+Quando realizamos a alteração de valor do controle, um evento é invocado. Podemos assinar este evento para realizarmos alguma operação na aplicação. Para isso, assinamos o evento TOGGLED, e aí podemos definir nossa rotina no code behind. No evento que é disparado, conseguimos descobrir se o controle está ativo ou não através do valor no argumento.
 
 ##### Roteiro da finalização
 Esse foi mais um vídeo deste curso. O que você está achando? Conta pra gente, deixa o seu comentário aí no vídeo e também dá aquele like, caso tenha gostado. Um abraço e até próxima!
