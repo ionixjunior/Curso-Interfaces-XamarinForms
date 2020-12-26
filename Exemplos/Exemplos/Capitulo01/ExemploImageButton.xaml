@@ -6,12 +6,10 @@
     Title="ImageButton">
     <ContentPage.Content>
         <ImageButton
-            Aspect="AspectFill"
+            Padding="20,15"
             BackgroundColor="Orange"
-            HeightRequest="300"
             HorizontalOptions="Center"
-            Source="monkey.jpg"
-            VerticalOptions="Center"
-            WidthRequest="300" />
+            Source="banana.png"
+            VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>
