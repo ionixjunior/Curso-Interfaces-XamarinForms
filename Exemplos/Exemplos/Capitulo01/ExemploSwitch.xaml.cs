@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Exemplos.Capitulo01
 {
@@ -14,7 +11,7 @@ namespace Exemplos.Capitulo01
 
         void Switch_Toggled(System.Object sender, Xamarin.Forms.ToggledEventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine($"O valor foi alterado para {e.Value}");
+            System.Diagnostics.Debug.WriteLine($"O valor está {e.Value}");
         }
     }
 }

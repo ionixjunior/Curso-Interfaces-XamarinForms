@@ -6,10 +6,11 @@
     Title="Switch">
     <ContentPage.Content>
         <Switch
-            BackgroundColor="Orange"
-            IsToggled="True"
+            HorizontalOptions="Center"
+            IsToggled="true"
             OnColor="Black"
-            ThumbColor="Yellow"
-            Toggled="Switch_Toggled" />
+            ThumbColor="Orange"
+            Toggled="Switch_Toggled"
+            VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>

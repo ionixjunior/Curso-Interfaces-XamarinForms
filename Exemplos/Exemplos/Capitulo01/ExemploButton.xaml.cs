@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Exemplos.Capitulo01
 {
@@ -14,7 +11,7 @@ namespace Exemplos.Capitulo01
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("O botão foi clicado!");
+            System.Diagnostics.Debug.WriteLine("Clicou no botão");
         }
 
         void Button_Pressed(System.Object sender, System.EventArgs e)

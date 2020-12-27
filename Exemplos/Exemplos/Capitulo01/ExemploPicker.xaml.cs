@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 
@@ -13,9 +12,9 @@ namespace Exemplos.Capitulo01
 
             var itens = new List<Item>
             {
-                new Item { Nome = "Opção A" },
-                new Item { Nome = "Opção B" },
-                new Item { Nome = "Opção C" }
+                new Item() { Name = "Item 1" },
+                new Item() { Name = "Item 2" },
+                new Item() { Name = "Item 3" }
             };
 
             MeuPicker.ItemsSource = itens;
@@ -26,17 +25,17 @@ namespace Exemplos.Capitulo01
 
         void MeuPicker_SelectedIndexChanged(System.Object sender, System.EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine($"O índice selecionado foi {MeuPicker.SelectedIndex} com o valor {MeuPicker.SelectedItem}");
+            System.Diagnostics.Debug.WriteLine($"Índice selecionado {MeuPicker.SelectedIndex} - Item selecionado {MeuPicker.SelectedItem}");
         }
     }
 
     public class Item
     {
-        public string Nome { get; set; }
+        public string Name { get; set; }
 
         public override string ToString()
         {
-            return Nome;
+            return Name;
         }
     }
 }
