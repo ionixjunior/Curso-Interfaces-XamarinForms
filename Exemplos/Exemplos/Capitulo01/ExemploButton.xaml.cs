@@ -11,7 +11,7 @@ namespace Exemplos.Capitulo01
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("Clicou no botão");
+            System.Diagnostics.Debug.WriteLine("O botão foi clicado");
         }
 
         void Button_Pressed(System.Object sender, System.EventArgs e)
