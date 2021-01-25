@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Exemplos.Capitulo01.ExemploCheckbox"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <CheckBox CheckedChanged="CheckBox_CheckedChanged">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                    <VisualState x:Name="Normal">
+                        <VisualState.Setters>
+                            <Setter Property="Color" Value="Red" />
+                        </VisualState.Setters>
+                    </VisualState>
+
+                    <VisualState x:Name="IsChecked">
+                        <VisualState.Setters>
+                            <Setter Property="Color" Value="Green" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </CheckBox>
+    </ContentPage.Content>
+</ContentPage>
