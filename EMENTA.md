@@ -100,19 +100,19 @@ A todo instante fazemos interações nas telas dos devices e geralmente é pra e
 ##### Roteiro da demo
 Para exibirmos um botão no aplicativo, utilizamos o controle BUTTON seguido da propriedade TEXT onde definimos o texto do botão. 
 
-Assim como no LABEL, o texto do botão também tem configurações semelhantes, como: alteração da cor do texto, tamanho da fonte, atributos e transformações. Para maiores detalhes, veja o vídeo que fala em detalhes sobre o controle LABEL.
+Assim como no LABEL, o texto do botão também tem configurações semelhantes, como: alteração da cor do texto, tamanho da fonte, atributos e transformações. Para mais informações, assista o vídeo que aborda em detalhes o controle LABEL.
 
 Podemos também definir um cor de fundo através da propriedade BACKGROUND COLOR. O controle está preenchido na tela inteira, então, vou configurar seu layout para centralizar na pagina através das propriedades HORIZONTAL OPTIONS e VERTICAL OPTIONS.
 
-Para definir uma largura e altura fixa para o botão, usamos as propriedades WIDTH REQUEST e HEIGHT REQUEST, respectivamente.
+Para definir uma largura e altura fixa para o botão, usamos as propriedades WIDTH REQUEST e HEIGHT REQUEST, respectivamente. 
 
 O botão pode ter bordas arredondadas, e para isso, utilizamos a propriedade CORNER RADIUS, onde especificamos um valor absoluto.
 
-O botão possui bordas, e para que elas aparecem, basta especificarmos a propriedade BORDER WIDTH e inserir o tamanho da borda que desejamos. Ainda sobre a borda, podemos escolher a cor dela usando a propridade BORDER COLOR. 
+O botão possui bordas, e para que elas aparecem, basta especificarmos a propriedade BORDER WIDTH e inserir o tamanho da borda que desejamos. Repare que a borda foi visualizada apenas no iOS. A primeira impressão que fica é que isso trata-se de um problema do framework. Por outro lado, qual a cor da borda que deve ser exibida? Talvez o Android não tenha definido um valor padrão de cor para aplicar e exibir a borda quando configuramos sua largura, por isso, apresenta este comportamento atualmente. Mas podemos resolver isso escolhendo a cor da borda usando a propridade BORDER COLOR.
 
-Podemos inserir uma imagem neste botão através da propriedade IMAGE SOURCE, que pode ser um link da internet ou o nome da imagem presentes nos resources da aplicação. Não temos muito controle sobre a imagem aqui, então, esteja ciente de que a imagem deve ser pequena e adequada para ser exibida no botão. É importante lembrar que gifs animados não funcionam neste controle. Será exibido apenas o primeiro quadro do gif.
+Podemos inserir uma imagem neste botão através da propriedade IMAGE SOURCE, que pode ser um link da internet ou o nome da imagem presente nos resources da aplicação. Repare que aqui estamos diante de outro problema. Percebam que o truncamento dos textos do botão estão diferentes entre iOS e Android. No iOS o texto é truncado no meio. Já no Android, o texto quebra a linha. Tudo indica que isso é um problema de comportamento do framework. Não temos muito controle sobre a imagem aqui, então, esteja ciente de que a imagem deve ser pequena e adequada para ser exibida no botão. É importante lembrar que gifs animados não funcionam neste controle. Será exibido apenas o primeiro quadro do gif.
 
-Mas conseguimos alterar o posicionamento da imagem usando a propriedade CONTENT LAYOUT, onde especificamos onde desejamos visualizá-la com as opções LEFT, RIGHT, BOTTOM e TOP. Também podemos especificar uma distância entre a imagem e o texto do botão. Para isso, basta adicionarmos um valor absoluto juntamente da opção de layout desejada.
+Mas conseguimos alterar o posicionamento da imagem usando a propriedade CONTENT LAYOUT, onde especificamos onde desejamos visualizá-la com as opções LEFT, RIGHT, BOTTOM e TOP. Aqui também fica claro que estamos diante de outro problema. Notem que o espaçamento entre a imagem e o texto do botão estão diferentes entre as plataformas. Já existe um issue no GitHub que fala sobre isso, então, acompanhe na descrição deste vídeo a resolução deste problema e dos demais que mencionei acima. Podemos especificar uma distância entre a imagem e o texto do botão. Para isso, basta adicionarmos um valor absoluto juntamente da opção de layout desejada.
 
 Este botão é clicável e podemos vê-lo esmaecido quando clicamos e seguramos. Podemos também capturar esse clique para realizarmos alguma operação no app, e isso pode ser feito através de comandos ou eventos. Agora, apenas vamos ver como isso se dá através de eventos. Basta assinarmos o evento CLICKED. O Visual Studio vai criar um novo método no code behind da tela. Agora, este método está sendo executado toda vez que o botão é clicado e você pode realizar alguma ação a partir daqui.
 
