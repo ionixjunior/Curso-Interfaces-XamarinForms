@@ -8,11 +8,9 @@
         <TimePicker
             x:Name="MeuTimePicker"
             BackgroundColor="Orange"
-            FontAttributes="Bold"
-            Format="t"
+            Format="hh:mm tt"
             HorizontalOptions="Center"
-            TextColor="Yellow"
-            Time="11:00"
+            PropertyChanged="MeuTimePicker_PropertyChanged"
             VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>
