@@ -8,11 +8,11 @@
         <DatePicker
             x:Name="MeuDatePicker"
             BackgroundColor="Orange"
-            Date="8/30/1987"
+            DateSelected="MeuDatePicker_DateSelected"
             FontAttributes="Bold"
             Format="D"
             HorizontalOptions="Center"
-            TextColor="Yellow"
+            TextColor="Black"
             VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>

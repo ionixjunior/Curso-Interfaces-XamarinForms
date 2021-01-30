@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace Exemplos.Capitulo01
@@ -11,16 +9,15 @@ namespace Exemplos.Capitulo01
         {
             InitializeComponent();
 
-            MeuDatePicker.Date = new DateTime(2020, 11, 11);
-            MeuDatePicker.MinimumDate = new DateTime(2020, 11, 5);
-            MeuDatePicker.MaximumDate = new DateTime(2020, 11, 15);
-
-            MeuDatePicker.DateSelected += MeuDatePicker_DateSelected;
+            var data = new DateTime(2021, 1, 10);
+            MeuDatePicker.Date = data;
+            MeuDatePicker.MinimumDate = data.AddDays(-1);
+            MeuDatePicker.MaximumDate = data.AddDays(1);
         }
 
-        private void MeuDatePicker_DateSelected(object sender, DateChangedEventArgs e)
+        void MeuDatePicker_DateSelected(System.Object sender, Xamarin.Forms.DateChangedEventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine($"A data selecionada é {e.NewDate} e a antiga é {e.OldDate}");
+            System.Diagnostics.Debug.WriteLine($"Novo valor: {e.NewDate} - Valor antigo: {e.OldDate}");
         }
     }
 }
