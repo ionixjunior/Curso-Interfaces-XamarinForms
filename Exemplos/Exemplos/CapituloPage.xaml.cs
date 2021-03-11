@@ -17,6 +17,7 @@ namespace Exemplos
                 .GetExecutingAssembly()
                 .GetTypes()
                 .Where(x => x.Namespace == namespaceDoCapitulo)
+                .Where(x => !x.FullName.Contains("InitializeComponent"))
                 .ToList();
 
             ListaDosExemplos.ItemsSource = exemplosDoCapitulo;

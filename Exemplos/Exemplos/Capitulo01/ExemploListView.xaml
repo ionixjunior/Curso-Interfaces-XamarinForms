@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Exemplos.Capitulo01.ExemploListView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <ListView
+            CachingStrategy="RecycleElementAndDataTemplate"
+            Footer="Rodapé da lista"
+            GroupDisplayBinding="{Binding NomeDoGrupo}"
+            HasUnevenRows="true"
+            Header="Cabeçalho da lista"
+            IsGroupingEnabled="True"
+            IsPullToRefreshEnabled="true"
+            ItemsSource="{Binding ListaAgrupada}">
+            <ListView.HeaderTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+
+            <ListView.FooterTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.FooterTemplate>
+
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding NomeDoGrupo}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Ação 1" />
+                            <MenuItem IsDestructive="true" Text="Ação 2" />
+                        </ViewCell.ContextActions>
+
+                        <StackLayout Margin="20">
+                            <Label Text="{Binding Nome}" />
+                            <Label Text="{Binding Profissao}" />
+                            <Label Text="{Binding Passatempo}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
