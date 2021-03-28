@@ -7,28 +7,42 @@
         <ListView
             CachingStrategy="RecycleElementAndDataTemplate"
             Footer="Rodapé da lista"
-            GroupDisplayBinding="{Binding NomeDoGrupo}"
             HasUnevenRows="true"
             Header="Cabeçalho da lista"
             IsGroupingEnabled="True"
-            IsPullToRefreshEnabled="true"
-            ItemsSource="{Binding ListaAgrupada}">
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding EstaAtualizandoALista}"
+            ItemSelected="AoSelecionarItem"
+            ItemsSource="{Binding ListaAgrupada}"
+            RefreshCommand="{Binding AtualizarListaAgrupadaCommand}">
             <ListView.HeaderTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding .}" />
+                    <Label
+                        HeightRequest="50"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding .}"
+                        VerticalTextAlignment="Center" />
                 </DataTemplate>
             </ListView.HeaderTemplate>
 
             <ListView.FooterTemplate>
                 <DataTemplate>
-                    <Label Text="{Binding .}" />
+                    <Label
+                        HeightRequest="50"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding .}"
+                        VerticalTextAlignment="Center" />
                 </DataTemplate>
             </ListView.FooterTemplate>
 
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text="{Binding NomeDoGrupo}" />
+                        <Label
+                            Margin="20,0"
+                            FontAttributes="Bold"
+                            Text="{Binding NomeDoGrupo}"
+                            VerticalTextAlignment="Center" />
                     </ViewCell>
                 </DataTemplate>
             </ListView.GroupHeaderTemplate>
@@ -37,8 +51,15 @@
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.ContextActions>
-                            <MenuItem Text="Ação 1" />
-                            <MenuItem IsDestructive="true" Text="Ação 2" />
+                            <MenuItem
+                                Clicked="AoClicarNaAcao1"
+                                CommandParameter="{Binding .}"
+                                Text="Ação 1" />
+                            <MenuItem
+                                Clicked="AoClicarNaAcao2"
+                                CommandParameter="{Binding .}"
+                                IsDestructive="true"
+                                Text="Ação 2" />
                         </ViewCell.ContextActions>
 
                         <StackLayout Margin="20">

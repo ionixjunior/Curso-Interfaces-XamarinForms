@@ -1,54 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
 using Exemplos.Models;
+using Exemplos.ViewModels;
 using Xamarin.Forms;
 
 namespace Exemplos.Capitulo01
 {
     public partial class ExemploListView : ContentPage
     {
-        public List<string> ListaSimples { get; } = new List<string>
-        {
-            "Item 1",
-            "Item 2",
-            "Item 3",
-            "Item 4",
-            "Item 5"
-        };
-
-        public List<ItemLista> ListaComplexa { get; } = new List<ItemLista>
-        {
-            new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Jogar cartas" },
-            new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Jogar Tony Hawk" },
-            new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Viajar" },
-            new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Desenhar" },
-            new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Programar algo que não sei" }
-        };
-
-        public List<GrupoLista> ListaAgrupada { get; } = new List<GrupoLista>
-        {
-            new GrupoLista("Grupo A", new List<ItemLista>
-            {
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Jogar cartas" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Jogar Tony Hawk" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Viajar" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Desenhar" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Programar algo que não sei" }
-            }),
-            new GrupoLista("Grupo B", new List<ItemLista>
-            {
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Jogar cartas" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Jogar Tony Hawk" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Viajar" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Desenhar" },
-                new ItemLista { Nome = "Ione Souza Junior", Profissao = "Desenvolvedor Mobile", Foto = "banana.png", Passatempo = "Programar algo que não sei" }
-            })
-        };
 
         public ExemploListView()
         {
             InitializeComponent();
-            BindingContext = this;
+
+            BindingContext = new ExemploListViewModel();
+        }
+
+        private void AoClicarNaAcao1(object sender, EventArgs e)
+        {
+            if (sender is MenuItem menuItem
+                && menuItem.CommandParameter is ItemLista itemLista)
+            {
+                System.Diagnostics.Debug.WriteLine($"Ação 1; Item {itemLista.Nome}, {itemLista.Profissao}, {itemLista.Passatempo}");
+            }
+        }
+
+        private void AoClicarNaAcao2(object sender, EventArgs e)
+        {
+            if (sender is MenuItem menuItem
+                && menuItem.CommandParameter is ItemLista itemLista)
+            {
+                System.Diagnostics.Debug.WriteLine($"Ação 2; Item {itemLista.Nome}, {itemLista.Profissao}, {itemLista.Passatempo}");
+            }
+        }
+
+        private void AoSelecionarItem(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem is ItemLista itemLista)
+                System.Diagnostics.Debug.WriteLine($"Item selecionado: {itemLista.Nome}, {itemLista.Profissao}, {itemLista.Passatempo}");
         }
     }
 }
