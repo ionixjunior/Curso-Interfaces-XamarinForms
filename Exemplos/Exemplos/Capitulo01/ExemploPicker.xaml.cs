@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Exemplos.Models;
 using Xamarin.Forms;
 
 namespace Exemplos.Capitulo01
@@ -26,16 +27,6 @@ namespace Exemplos.Capitulo01
         void MeuPicker_SelectedIndexChanged(System.Object sender, System.EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine($"Índice selecionado {MeuPicker.SelectedIndex} - Item selecionado {MeuPicker.SelectedItem}");
-        }
-    }
-
-    public class Item
-    {
-        public string Name { get; set; }
-
-        public override string ToString()
-        {
-            return Name;
         }
     }
 }

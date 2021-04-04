@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="Exemplos.Capitulo01.ExemploListView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <ListView
+            CachingStrategy="RecycleElementAndDataTemplate"
+            Footer="Rodapé da lista"
+            HasUnevenRows="true"
+            Header="Cabeçalho da lista"
+            IsGroupingEnabled="True"
+            IsPullToRefreshEnabled="True"
+            IsRefreshing="{Binding EstaAtualizandoALista}"
+            ItemSelected="AoSelecionarItem"
+            ItemsSource="{Binding ListaAgrupada}"
+            RefreshCommand="{Binding AtualizarListaAgrupadaCommand}">
+            <ListView.HeaderTemplate>
+                <DataTemplate>
+                    <Label
+                        HeightRequest="50"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding .}"
+                        VerticalTextAlignment="Center" />
+                </DataTemplate>
+            </ListView.HeaderTemplate>
+
+            <ListView.FooterTemplate>
+                <DataTemplate>
+                    <Label
+                        HeightRequest="50"
+                        HorizontalTextAlignment="Center"
+                        Text="{Binding .}"
+                        VerticalTextAlignment="Center" />
+                </DataTemplate>
+            </ListView.FooterTemplate>
+
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label
+                            Margin="20,0"
+                            FontAttributes="Bold"
+                            Text="{Binding NomeDoGrupo}"
+                            VerticalTextAlignment="Center" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem
+                                Clicked="AoClicarNaAcao1"
+                                CommandParameter="{Binding .}"
+                                Text="Ação 1" />
+                            <MenuItem
+                                Clicked="AoClicarNaAcao2"
+                                CommandParameter="{Binding .}"
+                                IsDestructive="true"
+                                Text="Ação 2" />
+                        </ViewCell.ContextActions>
+
+                        <StackLayout Margin="20">
+                            <Label Text="{Binding Nome}" />
+                            <Label Text="{Binding Profissao}" />
+                            <Label Text="{Binding Passatempo}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
